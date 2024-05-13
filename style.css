@@ -85,13 +85,20 @@ body {
     font-size: 20px;
     width: 100%;
     padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .footer-subscribe-social-media {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    h3 {
+        color: white;
+        font-size: 32;
+        padding-bottom: 55px;
+    }
 
 }
 
@@ -101,12 +108,33 @@ body {
     width: 50%;
     align-items: baseline;
     justify-content: center;
-
+    padding-left: 140px;
 }
 
 .footer-subscribe {
     display: flex;
     flex-direction: column;
+
+    input{
+        border: none;
+        background-color: #0c3b2e;
+        border-bottom: 2px solid white;
+        font-size: 20;
+        height: 48px;
+        margin-top: 6px;
+        font-size: 15px;
+    }
+
+    button{
+        margin-top: 30px;
+        width: 30%;
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        background-color: #053124;
+        color: white;
+        font-size: 20px;
+    }
 }
 
 .footer-social-media {
@@ -114,8 +142,33 @@ body {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    justify-content: center;
+    justify-content: normal;
 
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* membuat lingkaran */
+    background-color: #FEBA01;
+    /* warna biru Facebook */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.circle i {
+    color: white;
+    /* warna ikon putih */
+    font-size: 48px;
+    /* ukuran ikon */
 }
 
 .footer-shortcut {
@@ -128,5 +181,37 @@ body {
 }
 
 .footer-shortcut-wrapper {
+    display: flex;
     width: 33, 3%;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        font-size: 30px;
+        color: #FEBA01;
+    }
+}
+
+.shortcut-wrapper{
+    display: flex;
+    flex-direction: row;
+
+    a{
+        padding: 15px 0;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+.shortcut-wrapper-left{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.shortcut-wrapper-right {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
 }
