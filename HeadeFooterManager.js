@@ -1,47 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Vending Machine</title>
-  </head>
-  <body>
-    <!--navigation bar-->
-    <div class="fContainer">
-      <nav class="wrapper">
-        <div class="brand">
-          <div class="firstname">Vending</div>
-          <div class="lastname">Machine</div>
+class SpecialNavbar extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
+        <!--navigation bar-->
+        <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+            <div class="firstname">Vending</div>
+            <div class="lastname">Machine</div>
+            </div>
+
+            <ul class="navigation">
+            <li><a href="/ ">Beranda</a></li>
+            <li><a href="/ ">Layanan</a></li>
+            <li><a href="/ ">Produk</a></li>
+            <li><a href="/ ">Kontak</a></li>
+            <li><a href="/ " class="active">Informasi</a></li>
+            </ul>
+        </nav>
         </div>
+        `
+    }
+}
 
-        <ul class="navigation">
-          <li><a href="/ ">Beranda</a></li>
-          <li><a href="/ ">Layanan</a></li>
-          <li><a href="/ ">Produk</a></li>
-          <li><a href="/ ">Kontak</a></li>
-          <li><a href="/ " class="active">Informasi</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <!--Bagian isi-->
-    <div class="bagian-isi">
-      <div class="bagain-utama">
-        <h3>PEMASOK VENDING MACHINES TERBAIK DI INDONESIA</h3>
-        <p>
-          Vending merupakan salah satu pemasok mesin penjual otomatis terbaik di
-          Indonesia
-        </p>
-
-        <a href="#" class="btn-custom">
-          Lihat selengkapnya <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-
-    <!--footer-->
-    <div class="footer">
+class SpecialFooter extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
+        <div class="footer">
       <div class="footer-subscribe-social-media">
         <div class="footer-contact">
           <div class="footer-subscribe">
@@ -149,5 +133,10 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
+        `
+
+    }
+}
+
+customElements.define("special-navbar", SpecialNavbar);
+customElements.define("special-footer", SpecialFooter);
