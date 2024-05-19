@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Vending Machine</title>
   </head>
-  <body>
+  <body onload="displayContent(0)">
     <!--navigation bar-->
     <div class="fContainer">
       <nav class="wrapper">
@@ -37,6 +37,56 @@
         <a href="#" class="btn-custom">
           Lihat selengkapnya <i class="fas fa-arrow-right"></i>
         </a>
+      </div>
+    </div>
+
+    <!--OUR TEAM-->
+    <div class="our-team-wrapper">
+      <h3>OUR TEAM</h3>
+      <div class="container">
+        <input type="radio" name="dot" id="one" />
+        <input type="radio" name="dot" id="two" />
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="" alt="" id="myimage1" />
+                </div>
+                <div class="details">
+                  <div class="name" id="myname1">Name</div>
+                  <div class="job" id="myrole1">Role</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="" alt="" id="myimage2" />
+                </div>
+                <div class="details">
+                  <div class="name" id="myname2">Name</div>
+                  <div class="job" id="myrole2">Role</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="" alt="" id="myimage3" />
+                </div>
+                <div class="details">
+                  <div class="name" id="myname3">Name</div>
+                  <div class="job" id="myrole3">Role</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
       </div>
     </div>
 
@@ -149,5 +199,7 @@
         </div>
       </div>
     </div>
+
+    <script src="slider.js"></script>
   </body>
 </html>
