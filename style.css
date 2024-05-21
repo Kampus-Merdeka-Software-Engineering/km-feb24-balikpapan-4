@@ -99,6 +99,13 @@ body {
 
 /* our team */
 
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 .our-team-wrapper {
     display: flex;
     flex-direction: column;
@@ -107,10 +114,115 @@ body {
     justify-content: center;
     position: relative;
 
-    h3{
+    h3 {
         color: #0D3B2E;
         font-size: 40px;
         font-weight: 900;
+    }
+}
+
+.our-team-header {
+    background-color: #BC8B51;
+    padding: 20px;
+    margin: 0;
+    border-radius: 15px;
+
+    h3 {
+        margin: 0;
+        color: white;
+
+    }
+}
+
+.our-team-container{
+    width: 80%;
+}
+
+.our-team-main-card{
+    display: flex;
+    margin-top: 71px;
+}
+.our-team-cards{
+    display: flex;
+}
+
+.our-team-card{
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    width: 325px;
+    margin: 25px;
+    
+}
+
+.our-team-photo{
+    background-color: #BC8B51;
+    border-radius: 15px;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.our-team-role{
+    font-family: arial;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 50%;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.image-front{
+    height: 300px;
+    width: 275px;
+    position: relative;
+    z-index: 2;
+}
+
+.our-team-name{
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: #BC8B51;
+
+    p{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: arial;
+        padding: 22px;
+        margin: 0;
+    }
+}
+
+.our-team-button-wrapper{
+    display: flex;
+    margin-top: 200px;
+}
+
+.our-team-button{
+    border-radius: 15px;
+    height: 55px;
+    width: 55px;
+    padding: 12px auto;
+    background-color: #BC8B51;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: white;
+        opacity: 50%;
+        text-align: center;
+        font-size: 25px;
+        font-family: arial;
+        margin: 0;
+        
     }
 }
 
