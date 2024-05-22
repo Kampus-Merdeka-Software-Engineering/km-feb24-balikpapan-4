@@ -184,7 +184,7 @@ body {
 
 .image-front{
     height: 300px;
-    width: 275px;
+    width: 100%;
     position: relative;
     z-index: 2;
 }

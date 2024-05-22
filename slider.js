@@ -1,21 +1,21 @@
 let content = [
-    { image: "Resources/team/Audina.png", name: "AUDINA ARFIANI", role: "FRONT-END DEV" },
-    { image: "Resources/team/Sekar.png", name: "SEKAR NURSYAHIDAH", role: "QUALITY ASSURANCE" },
-    { image: "Resources/team/Dwi.png", name: "DWI ARDITA IZAROTUN", role: "PARTY LEADER" },
+    { image: "Resources/team/Ajar Basyar.png", name: "AJAR BASYAR", role: "FRONT-END DEV" },
+    { image: "Resources/team/Halim Bagus.png", name: "HALIM BAGUS", role: "FRONT-END DEV" },
+    { image: "Resources/team/Fikri Ramadhan.png", name: "FIKRI RAMADHAN", role: "FRONT-END DEV" },
     
-    { image: "Resources/team/Dwi.png", name: "FIKRI RAMADHAN", role: "FRONT-END DEV" },
-    { image: "Resources/team/Audina.png", name: "AJAR BASYAR", role: "PARTY LEADER" },
-    { image: "Resources/team/Sekar.png", name: "HALIM", role: "QUALITY ASSURANCE" },
+    { image: "Resources/team/Audina Arifiani.png", name: "AUDINA ARIFIANI", role: "UI DESIGNER" },
+    { image: "Resources/team/Dwi Ardita Izarotun.png", name: "DWI ARDITA IZAROTUN", role: "UI DESIGNER" },
+    { image: "Resources/team/Sekar Nursyahidah.png", name: "SEKAR NURSYAHIDAH", role: "QUALITY ASSURANCE" },
     
-    { image: "Resources/team/Sekar.png", name: "AUDINA ARFIANI", role: "FRONT-END DEV" },
-    { image: "Resources/team/Dwi.png", name: "SEKAR NURSYAHIDAH", role: "QUALITY ASSURANCE" },
-    { image: "Resources/team/Audina.png", name: "DWI ARDITA IZAROTUN", role: "PARTY LEADER" },
+    { image: "Resources/team/Andika Kurnia.png", name: "ANDIKA KURNIA", role: "FRONT-END DEV" },
+    { image: "Resources/team/Ardanita Windy P.png", name: "ARDANITA WINDY P", role: "FRONT-END DEV" },
+    { image: "Resources/team/Dennys Pranata Putra.png", name: "DENNYS PRANATA P", role: "DEPLOYMENT TEAM" },
 
-    { image: "Resources/team/Audina.png", name: "FIKRI RAMADHAN", role: "FRONT-END DEV" },
-    { image: "Resources/team/Dwi.png", name: "AJAR BASYAR", role: "PARTY LEADER" },
-    { image: "Resources/team/Sekar.png", name: "HALIM", role: "QUALITY ASSURANCE" },
+    { image: "Resources/team/Sarah Nur Aulia.png", name: "SARAH NUR AULIA", role: "QUALITY ASSURANCE" },
+    { image: "Resources/team/Machfud Ubaidillah Anas.png", name: "MACHFUD UBAIDILLAH", role: "DEPLOYMENT TEAM" },
+    { image: "Resources/team/Nurul Hafifa Caniago.png", name: "NURUL HAFIFA C", role: "QUALITY ASSURANCE" },
 
-    { image: "Resources/team/Audina.png", name: "FIKRI RAMADHAN", role: "FRONT-END DEV" },
+    { image: "Resources/team/Dini Hanifah.png", name: "DINI HANIFAH", role: "QUALITY ASSURANCE" },
 ];
 
 // Current index to keep track of which content to display
