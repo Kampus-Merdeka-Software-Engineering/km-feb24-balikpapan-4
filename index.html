@@ -3,203 +3,331 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="displayContent(0)">
-    <!--navigation bar-->
-    <div class="fContainer">
-      <nav class="wrapper">
-        <div class="brand">
-          <div class="firstname">Vending</div>
-          <div class="lastname">Machine</div>
-        </div>
-
-        <ul class="navigation">
-          <li><a href="/ ">Beranda</a></li>
-          <li><a href="/ ">Layanan</a></li>
-          <li><a href="/ ">Produk</a></li>
-          <li><a href="/ ">Kontak</a></li>
-          <li><a href="/ " class="active">Informasi</a></li>
+    <header>
+      <nav>
+        <div class="logo"><span>VENDING</span><span>MACHINE</span></div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#data-analytics">DATA ANALYTICS</a></li>
+          <li><a href="#request-data">REQUEST DATA</a></li>
+          <li><a href="#our-team">PROFILE TEAM</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <h1>WELCOME TO THE WEBSITE</h1>
+          <h1>
+            <span style="font-size: 18px; margin-right: 5px">Created By</span
+            ><strong style="color: #feba01">GROUP 4 BALIKPAPAN</strong>
+          </h1>
+          <p style="margin: 25px 0px">
+            This website was built for as a sign the end of learning at ReVou
+            KM.<br />To find out more please click the button below
+          </p>
+          <a href="#" class="btn">MORE INFO ABOUT US</a>
+        </div>
+      </section>
+      <section class="promotion">
+        <div class="promotion-text">
+          <h1>Vending Machine <span>May</span> Promotion</h1>
+          <p>Get It While It's HOT</p>
+          <div class="promotion-details">
+            <div class="detail">
+              <h2>$0</h2>
+              <p>Down Money</p>
+            </div>
+            <div class="detail">
+              <h2>12</h2>
+              <p>Months</p>
+            </div>
+            <div class="detail">
+              <h2>0%</h2>
+              <p>Interest Rate</p>
+            </div>
+          </div>
+        </div>
+        <div class="promotion-image">
+          <img
+            src="https://www.autovending.com.au/wp-content/uploads/2020/01/Merchant-MEDIA-6-Combi-Hi-Res.jpg"
+            alt="Vending Machine"
+            height="300"
+          />
+        </div>
+      </section>
+      <section id="data-analytics" style="height: fit-content">
+        <h1
+          style="
+            margin: 0px;
+            text-align: center;
+            color: #1a3b2f;
+            font-weight: bold;
+            font-size: 34px;
+          "
+        >
+          DASHBOARD MENTORING
+        </h1>
+        <h1
+          style="
+            margin: 0px;
+            text-align: center;
+            color: #1a3b2f;
+            font-weight: bold;
+            font-size: 34px;
+          "
+        >
+          VENDING MACHINE
+        </h1>
+        <div class="container" style="margin-top: 50px">
+          <div class="chart-card">
+            <h2>TOP MACHINE USED</h2>
+            <p>
+              The most vending machine use is GuttenPlans x1367 which is in the
+              GuttenPlans area
+            </p>
+            <canvas id="topMachineChart"></canvas>
+          </div>
+          <div class="chart-card">
+            <h2>TRANSACTION TYPE</h2>
+            <p>
+              The type of transaction that is often used is cash.<br />The
+              difference in comparison is more than 50%
+            </p>
+            <canvas id="transactionTypeChart"></canvas>
+          </div>
+        </div>
+        <div class="chart-card" style="margin-top: 25px">
+          <h2 style="text-align: center">SALES TREND</h2>
+          <p style="text-align: center">Monthly revenue and sales charts</p>
+          <canvas id="salesTrendChart"></canvas>
+        </div>
+      </section>
+      <section id="request-data">
+        <div style="color: white; padding: 0px 50px">
+          <h1 style="font-size: 34px; margin-bottom: 0px">DATA REQUEST</h1>
+          <p style="font-size: 20px; margin-top: 0px">
+            Data Request Form to Get Desired Data
+          </p>
+        </div>
+        <form action="">
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    required
+                  />
+                </div>
+              </td>
+              <td>
+                <div>
+                  <label for="last_name">Last Name</label>
+                  <input type="text" id="last_name" name="last_name" required />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="ext">Phone Number</label>
+                  <div style="flex-direction: row !important">
+                    <select
+                      id="ext"
+                      name="ext"
+                      required
+                      style="margin-right: 10px"
+                    >
+                      <option value="+62">+62</option>
+                    </select>
+                    <input required style="width: 100%" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="data">Data</label>
+                  <input type="data" id="data" name="data" required />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="reason">Reason</label>
+                  <input type="reason" id="reason" name="reason" required />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="submit"
+                  class="btn"
+                  style="
+                    border: none;
+                    border-radius: 25px;
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    margin-top: 10px;
+                  "
+                >
+                  Submit
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
 
-    <!--Bagian isi-->
-    <div class="bagian-isi">
-      <div class="bagain-utama">
-        <h3>PEMASOK VENDING MACHINES TERBAIK DI INDONESIA</h3>
-        <p>
-          Vending merupakan salah satu pemasok mesin penjual otomatis terbaik di
-          Indonesia
-        </p>
+      <div class="our-team-wrapper" id="our-team">
+        <div class="our-team-header shadow">
+          <h3>OUR TEAM</h3>
+        </div>
 
-        <a href="#" class="btn-custom">
-          Lihat selengkapnya <i class="fas fa-arrow-right"></i>
-        </a>
+        <div class="our-team-container">
+          <div class="our-team-main-card">
+            <div class="our-team-cards">
+              <div class="our-team-card">
+                <div class="our-team-photo shadow">
+                  <div class="our-team-role" id="our-team-role">
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                    <div class="role1">QUALITY ASSURANCE</div>
+                  </div>
+                  <img
+                    src="Resources\team\Audina.png"
+                    alt="Photo"
+                    class="image-front"
+                    id="our-team-image1"
+                  />
+                </div>
+                <div class="our-team-name-wrapper shadow">
+                  <div class="our-team-name" id="our-team-name1">
+                    SEKAR NURSYAHIDAH
+                  </div>
+                </div>
+              </div>
+              <div class="our-team-card">
+                <div class="our-team-photo shadow">
+                  <div class="our-team-role" id="our-team-role">
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                    <div class="role2">QUALITY ASSURANCE</div>
+                  </div>
+                  <img
+                    src="Resources\team\Audina.png"
+                    alt="Photo"
+                    class="image-front"
+                    id="our-team-image2"
+                  />
+                </div>
+                <div class="our-team-name-wrapper shadow">
+                  <div class="our-team-name" id="our-team-name2">
+                    SEKAR NURSYAHIDAH
+                  </div>
+                </div>
+              </div>
+              <div class="our-team-card">
+                <div class="our-team-photo shadow">
+                  <div class="our-team-role" id="our-team-role">
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                    <div class="role3">QUALITY ASSURANCE</div>
+                  </div>
+                  <img
+                    src="Resources\team\Audina.png"
+                    alt="Photo"
+                    class="image-front"
+                    id="our-team-image3"
+                  />
+                </div>
+                <div class="our-team-name-wrapper shadow">
+                  <div class="our-team-name" id="our-team-name3">
+                    SEKAR NURSYAHIDAH
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-team-button-wrapper">
+          <button class="our-team-button shadow" onclick="prevSlide()">
+            <p><</p>
+          </button>
+          <button class="our-team-button shadow">
+            <p>1</p>
+          </button>
+          <button class="our-team-button shadow">
+            <p>2</p>
+          </button>
+          <button class="our-team-button shadow">
+            <p>3</p>
+          </button>
+          <button class="our-team-button shadow">
+            <p>4</p>
+          </button>
+          <button class="our-team-button shadow">
+            <p>5</p>
+          </button>
+          <button class="our-team-button shadow" onclick="nextSlide()">
+            <p>></p>
+          </button>
+        </div>
       </div>
-    </div>
 
-    <!--OUR TEAM-->
-    <div class="our-team-wrapper">
-      <h3>OUR TEAM</h3>
-      <div class="container">
-        <input type="radio" name="dot" id="one" />
-        <input type="radio" name="dot" id="two" />
-        <div class="main-card">
-          <div class="cards">
-            <div class="card">
-              <div class="content">
-                <div class="img">
-                  <img src="" alt="" id="myimage1" />
-                </div>
-                <div class="details">
-                  <div class="name" id="myname1">Name</div>
-                  <div class="job" id="myrole1">Role</div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <div class="img">
-                  <img src="" alt="" id="myimage2" />
-                </div>
-                <div class="details">
-                  <div class="name" id="myname2">Name</div>
-                  <div class="job" id="myrole2">Role</div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <div class="img">
-                  <img src="" alt="" id="myimage3" />
-                </div>
-                <div class="details">
-                  <div class="name" id="myname3">Name</div>
-                  <div class="job" id="myrole3">Role</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="button">
-          <button class="prev" onclick="prevSlide()">&#10094;</button>
-          <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-      </div>
-    </div>
-
-    <!--footer-->
-    <div class="footer">
-      <div class="footer-subscribe-social-media">
-        <div class="footer-contact">
-          <div class="footer-subscribe">
-            <h3>Subscribe to Our Newsletter</h3>
-            <form action="">
-              <div>
-                <input
-                  type="text"
-                  id="firstname"
-                  name="firstname"
-                  placeholder="First Name"
-                />
-                <input
-                  type="text"
-                  id="lastname"
-                  name="lastname"
-                  placeholder="Last Name"
-                />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                />
-              </div>
-
-              <button type="submit">Subcribe Now</button>
-            </form>
-          </div>
-        </div>
-
-        <div class="footer-social-media">
-          <h3>Follow Us</h3>
-          <div class="social-media">
-            <a href="https://twitter.com/YourTwitterHandle">
-              <div class="circle">
-                <img src="Resources\Image\Facebook.png" alt="" />
-              </div>
-            </a>
-            <a href="https://twitter.com/YourTwitterHandle">
-              <div class="circle">
-                <img src="Resources\Image\YouTube.png" alt="" />
-              </div>
-            </a>
-            <a href="https://twitter.com/YourTwitterHandle">
-              <div class="circle">
-                <img src="Resources\Image\Twitter.png" alt="" />
-              </div>
-            </a>
-            <a href="https://twitter.com/YourTwitterHandle">
-              <div class="circle">
-                <img src="Resources\Image\Instagram.png" alt="" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-shortcut">
-        <div class="footer-shortcut-wrapper">
-          <h3>MAIN MENU</h3>
-          <div class="shortcut-wrapper">
-            <div class="shortcut-wrapper-left">
-              <a href="">Beranda</a>
-              <a href="">Layanan</a>
-              <a href="">Produk</a>
-            </div>
-
-            <div class="shortcut-wrapper-right">
-              <a href="">Kontak</a>
-              <a href="">Informasi</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-shortcut-wrapper">
-          <h3>VENDING MACHINE</h3>
-          <div class="shortcut-wrapper">
-            <div class="shortcut-wrapper-left">
-              <a href="">Food</a>
-              <a href="">Carbonated</a>
-            </div>
-
-            <div class="shortcut-wrapper-right">
-              <a href="">Water</a>
-              <a href="">Non Carbonated</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-shortcut-wrapper">
-          <h3>Main menu</h3>
-          <div class="shortcut-wrapper">
-            <div class="shortcut-wrapper-left">
-              <a href="">Beranda</a>
-              <a href="">Layanan</a>
-              <a href="">Produk</a>
-            </div>
-
-            <div class="shortcut-wrapper-right">
-              <a href="">Kontak</a>
-              <a href="">Informasi</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+      <footer>
+        <p style="margin: 0px">&copy; 2024 Kelompok 4 Balikpapan</p>
+        <p style="margin: 0px">All Rights Reserved</p>
+      </footer>
+    </main>
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
     <script src="slider.js"></script>
   </body>
 </html>
