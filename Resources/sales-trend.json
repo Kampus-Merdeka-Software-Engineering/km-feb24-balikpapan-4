@@ -1,0 +1,62 @@
+[
+  {
+    "Year Month": "Jan 2022",
+    "Revenue": 883.5,
+    "Sales": 482
+  },
+  {
+    "Year Month": "Feb 2022",
+    "Revenue": 908.75,
+    "Sales": 492
+  },
+  {
+    "Year Month": "Mar 2022",
+    "Revenue": 1129,
+    "Sales": 630
+  },
+  {
+    "Year Month": "Apr 2022",
+    "Revenue": 1622.5,
+    "Sales": 866
+  },
+  {
+    "Year Month": "May 2022",
+    "Revenue": 1655.5,
+    "Sales": 854
+  },
+  {
+    "Year Month": "Jun 2022",
+    "Revenue": 2024.75,
+    "Sales": 999
+  },
+  {
+    "Year Month": "Jul 2022",
+    "Revenue": 2280.75,
+    "Sales": 1121
+  },
+  {
+    "Year Month": "Aug 2022",
+    "Revenue": 2108.25,
+    "Sales": 1021
+  },
+  {
+    "Year Month": "Sep 2022",
+    "Revenue": 1752,
+    "Sales": 839
+  },
+  {
+    "Year Month": "Oct 2022",
+    "Revenue": 1691.25,
+    "Sales": 819
+  },
+  {
+    "Year Month": "Nov 2022",
+    "Revenue": 1624.75,
+    "Sales": 794
+  },
+  {
+    "Year Month": "Dec 2022",
+    "Revenue": 1403.25,
+    "Sales": 694
+  }
+]
