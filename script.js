@@ -18,17 +18,34 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    const topMachineCtx = document.getElementById('topMachineChart').getContext('2d');
-    const transactionTypeCtx = document.getElementById('transactionTypeChart').getContext('2d');
-    const salesTrendCtx = document.getElementById('salesTrendChart').getContext('2d');
-
+    // CHART DASHBOARD //
+    var dashboard = new XMLHttpRequest();
+    var url = "https://api.jsonbin.io/v3/b/66503f4bacd3cb34a84cbce2"
+    dashboard.open('GET', url, true);
+    dashboard.send();
+    dashboard.onreadystatechange = function () {
+    if(this.readyState == 4 && this.status == 200) {
+        var data = JSON.parse(this.responseText);
+        var month = data.record.cleaning.map(e => e.Month).filter(Boolean);
+        var revenue = data.record.cleaning.map(e => e.Revenue).filter(Boolean);
+        var sales = data.record.cleaning.map(e => e.Sales).filter(Boolean);
+        var machine = data.record.cleaning.map(e => e.Machine).filter(Boolean);
+        var sale = data.record.cleaning.map(e => e.Sale).filter(Boolean);
+        var tipe = data.record.cleaning.map(e => e.Type).filter(Boolean);
+        var count = data.record.cleaning.map(e => e.Count).filter(Boolean);
+        
+    const topMachineCtx = document.getElementById('topMachineChart');
+    const transactionTypeCtx = document.getElementById('transactionTypeChart');
+    const salesTrendCtx = document.getElementById('salesTrendChart');
+    
+    // Top Machine Used //
     new Chart(topMachineCtx, {
         type: 'bar',
         data: {
-            labels: ['GuttenPlans x1367', 'EB Public Library x1380', 'Earle Asphalt x1371', 'BSQ Mall x1364 - Zales', 'BSQ Mall x1366 - ATT'],
+            labels: machine,
             datasets: [{
                 label: 'Sales',
-                data: [3600, 3100, 1000, 950, 850],
+                data: sale,
                 backgroundColor: '#6d9773',
                 borderColor: '#388e3c',
                 borderWidth: 1
@@ -44,13 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    new Chart(transactionTypeCtx, {
+    // Transaction Type //
+    const transactionTypePie = new Chart(transactionTypeCtx, {
         type: 'pie',
         data: {
-            labels: ['Cash', 'Credit'],
+            labels: tipe,
             datasets: [{
                 label: 'Transaction Type',
-                data: [64.9, 35.1],
+                data: count,
                 backgroundColor: ['#6d9773', '#bc8b51'],
                 borderColor: ['#388e3c', '#f57c00'],
                 borderWidth: 1
@@ -61,34 +79,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    new Chart(salesTrendCtx, {
-        type: 'line',
+    // Sales Trend //
+    const salesTrendMixed = new Chart(salesTrendCtx, {
+        type: 'bar',
         data: {
-            labels: ['Jan 2022', 'Feb 2022', 'Mar 2022', 'Apr 2022', 'May 2022', 'Jun 2022', 'Jul 2022', 'Aug 2022', 'Sep 2022', 'Oct 2022', 'Nov 2022', 'Dec 2022'],
-            datasets: [
-                {
-                    label: 'Revenue',
-                    data: [1200, 1500, 1800, 2000, 2300, 2500, 2200, 2100, 1900, 1700, 1600, 1500],
-                    borderColor: '#6d9773',
-                    backgroundColor: 'rgba(76, 175, 80, 0.2)',
-                    fill: true
-                },
-                {
-                    label: 'Sales',
-                    data: [800, 900, 1000, 1200, 1500, 1700, 1600, 1500, 1400, 1300, 1200, 1100],
-                    borderColor: '#ff9800',
-                    backgroundColor: '#bc8b51',
-                    fill: true
-                }
-            ]
+        datasets: [{
+           label: 'Sales',
+           data: sales,
+           backgroundColor: '#6d9773',
+           borderColor: '#388e3c',
+           borderWidth: 1,
+           order: 2
+        }, {
+           label: 'Revenue',
+           data: revenue,
+           type: 'line',
+           backgroundColor: '#bc8b51',
+           borderColor: '##f57c00',
+           borderWidth: 1,
+           order: 1
+        }],
+        labels: month
         },
         options: {
             responsive: true,
             scales: {
-                y: {
-                    beginAtZero: true
-                }
+              y: {
+                beginAtZero: true
+              }
             }
-        }
-    });
+          }
+        });
+    }};
+    
 });

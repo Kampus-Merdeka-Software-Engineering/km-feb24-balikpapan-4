@@ -378,7 +378,7 @@ section {
 
 .chart-card {
     color: #1a3b2f;
-    background: white;
+    background-color: white;
     border: 1px solid #1a3b2f;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
