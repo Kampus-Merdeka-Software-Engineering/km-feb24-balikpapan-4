@@ -115,6 +115,7 @@
       </section>
       <section id="request-data">
         <div style="color: white; padding: 0px 50px">
+          <img src="./Resources/Image/logo.png" alt="logo" style="width: 50%; height: auto;">
           <h1 style="font-size: 34px; margin-bottom: 0px">DATA REQUEST</h1>
           <p style="font-size: 20px; margin-top: 0px">
             Data Request Form to Get Desired Data
@@ -162,7 +163,7 @@
                     >
                       <option value="+62">+62</option>
                     </select>
-                    <input required style="width: 100%" />
+                    <input type="tel" required style="width: 100%" />
                   </div>
                 </div>
               </td>
@@ -171,7 +172,12 @@
               <td colspan="2">
                 <div>
                   <label for="data">Data</label>
-                  <input type="data" id="data" name="data" required />
+                  <select id="data" name="data" required>
+                    <option value="" disabled selected></option>
+                    <option value="data1">Data 1</option>
+                    <option value="data2">Data 2</option>
+                    <option value="data3">Data 3</option>
+                  </select>
                 </div>
               </td>
             </tr>
@@ -179,7 +185,12 @@
               <td colspan="2">
                 <div>
                   <label for="reason">Reason</label>
-                  <input type="reason" id="reason" name="reason" required />
+                  <select id="reason" name="reason" required>
+                    <option value="" disabled selected></option>
+                    <option value="data1">Reason 1</option>
+                    <option value="data2">Reason 2</option>
+                    <option value="data3">Reason 3</option>
+                  </select>
                 </div>
               </td>
             </tr>
