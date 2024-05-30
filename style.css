@@ -166,7 +166,7 @@ nav {
 }
 
 .our-team-header {
-    background-color: #BC8B51;
+    background-color: #6d9773;
     padding: 20px 80px;
     margin: 0;
     border-radius: 15px;
@@ -206,7 +206,7 @@ nav {
 }
 
 .our-team-photo {
-    background-color: #BC8B51;
+    background-color: #6d9773;
     border-radius: 15px;
     margin: 0;
     padding: 30px 20px;
@@ -236,7 +236,7 @@ nav {
 .our-team-name-wrapper {
     border-radius: 15px;
     margin-top: 20px;
-    background-color: #BC8B51;
+    background-color: #6d9773;
 
     .our-team-name {
         color: white;
@@ -251,7 +251,7 @@ nav {
 
 .our-team-button-wrapper {
     display: flex;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .our-team-button {
@@ -259,7 +259,7 @@ nav {
     height: 55px;
     width: 55px;
     padding: 12px auto;
-    background-color: #BC8B51;
+    background-color: #6d9773;
     margin: 0 20px;
     display: flex;
     justify-content: center;
