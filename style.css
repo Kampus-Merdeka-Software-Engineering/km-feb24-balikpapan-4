@@ -122,7 +122,16 @@ nav {
 .hero p {
     margin: 10px 0;
 }
-
+.hero-text p {
+    margin: 25px 0px;
+}
+.home-text span{
+    font-size: 18px; 
+    margin-right: 5px
+}
+.home-text strong{
+    color: #feba01
+}
 .btn {
     background-color: #FEBA01;
     color: black;
@@ -131,6 +140,7 @@ nav {
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
+    
 }
 
 .btn:hover {
@@ -374,6 +384,7 @@ section {
     display: flex;
     justify-content: space-around;
     gap: 25px;
+    margin-top: 50px
 }
 
 .chart-card {
@@ -386,16 +397,19 @@ section {
     padding: 40px 20px;
     box-sizing: border-box;
     max-height: calc(100vh - 200px);
+    margin-top: 25px
 }
 
 .chart-card h2 {
     margin-top: 0;
     margin-bottom: 0px;
+    text-align: center
 }
 
 .chart-card p {
     margin-top: 5px;
     margin-bottom: 30px;
+    text-align: center
 }
 
 canvas {
@@ -410,7 +424,18 @@ canvas {
     background-color: #6d9773;
     height: fit-content;
 }
-
+.request-text{
+    color: white; padding: 0px 50px
+}
+.request-text img{
+    width: 50%; height: auto
+}
+.request-text h1{
+    font-size: 34px; margin-bottom: 0px
+}
+.request-text p{
+    font-size: 20px; margin-top: 0px
+}
 #request-data form {
     width: 50%;
     padding: 20px;
@@ -442,7 +467,22 @@ td div select {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
+.form-phone{
+    flex-direction: row !important;
+}
+.form-phone select{
+    margin-right: 10px;
+}
+.form-phone input{
+    width: 100%;
+}
+#form-btn{
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
 footer {
     background-color: #004d40;
     color: white;
@@ -451,7 +491,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
+footer p{
+    margin: 0px;
+}
 .media-profile {
     height: 175px;
     width: 150px;
@@ -533,4 +575,14 @@ footer {
 .promotion-image img {
     width: 100%;
     border-radius: 10px;
+}
+.data-analytics{
+    height: fit-content
+}
+.data-analytics h1 {
+    margin: 0px;
+    text-align: center;
+    color: #1a3b2f;
+    font-weight: bold;
+    font-size: 34px;
 }

@@ -28,11 +28,10 @@
       <section id="home" class="hero">
         <div class="hero-text">
           <h1>WELCOME TO THE WEBSITE</h1>
-          <h1>
-            <span style="font-size: 18px; margin-right: 5px">Created By</span
-            ><strong style="color: #feba01">GROUP 4 BALIKPAPAN</strong>
+          <h1 class="home-text">
+            <span>Created By</span><strong>GROUP 4 BALIKPAPAN</strong>
           </h1>
-          <p style="margin: 25px 0px">
+          <p>
             This website was built for as a sign the end of learning at ReVou
             KM.<br />To find out more please click the button below
           </p>
@@ -68,31 +67,15 @@
       </section>
 
       <!-- Dashboard -->
-      <section id="data-analytics" style="height: fit-content">
-        <h1
-          style="
-            margin: 0px;
-            text-align: center;
-            color: #1a3b2f;
-            font-weight: bold;
-            font-size: 34px;
-          "
-        >
+      <section id="data-analytics" class="data-analytics" >
+        <h1>
           DASHBOARD MENTORING
         </h1>
-        <h1
-          style="
-            margin: 0px;
-            text-align: center;
-            color: #1a3b2f;
-            font-weight: bold;
-            font-size: 34px;
-          "
-        >
+        <h1>
           VENDING MACHINE
         </h1>
 
-        <div class="container" style="margin-top: 50px">
+        <div class="container" >
           <!-- Chart top used maschine -->
           <div class="chart-card">
             <h2>TOP MACHINE USED</h2>
@@ -115,9 +98,9 @@
         </div>
 
         <!-- Chart sales trend -->
-        <div class="chart-card" style="margin-top: 25px">
-          <h2 style="text-align: center">SALES TREND</h2>
-          <p style="text-align: center">Monthly revenue and sales charts</p>
+        <div class="chart-card" >
+          <h2>SALES TREND</h2>
+          <p>Monthly revenue and sales charts</p>
           <canvas id="salesTrendChart"></canvas>
         </div>
 
@@ -129,14 +112,13 @@
       </section>
 
       <section id="request-data">
-        <div style="color: white; padding: 0px 50px">
+        <div class="request-text">
           <img
             src="./Resources/Image/logo.png"
             alt="logo"
-            style="width: 50%; height: auto"
           />
-          <h1 style="font-size: 34px; margin-bottom: 0px">DATA REQUEST</h1>
-          <p style="font-size: 20px; margin-top: 0px">
+          <h1>DATA REQUEST</h1>
+          <p>
             Data Request Form to Get Desired Data
           </p>
         </div>
@@ -173,17 +155,16 @@
               <td colspan="2">
                 <div>
                   <label for="ext">Phone Number</label>
-                  <div style="flex-direction: row !important">
+                  <div class="form-phone" >
                     <select
                       type="number"
                       id="ext"
                       name="ext"
                       required
-                      style="margin-right: 10px"
                     >
                       <option value="+62">+62</option>
                     </select>
-                    <input type="number" required style="width: 100%" />
+                    <input type="number" required />
                   </div>
                 </div>
               </td>
@@ -219,13 +200,7 @@
                 <button
                   type="submit"
                   class="btn"
-                  style="
-                    border: none;
-                    border-radius: 25px;
-                    font-size: 18px;
-                    padding: 10px 20px;
-                    margin-top: 10px;
-                  "
+                  id="form-btn"
                 >
                   Submit
                 </button>
@@ -332,8 +307,8 @@
       </section>
 
       <footer>
-        <p style="margin: 0px">&copy; 2024 Kelompok 4 Balikpapan</p>
-        <p style="margin: 0px">All Rights Reserved</p>
+        <p>&copy; 2024 Kelompok 4 Balikpapan</p>
+        <p>All Rights Reserved</p>
       </footer>
     </main>
 
