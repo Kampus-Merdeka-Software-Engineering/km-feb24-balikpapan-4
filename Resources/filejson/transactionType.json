@@ -1,10 +1,10 @@
 [
   {
     "Type": "Cash",
-    "Record Count": 6239
+    "Count": 6239
   },
   {
     "Type": "Credit",
-    "Record Count": 3372
+    "Count": 3372
   }
 ]
