@@ -1,0 +1,927 @@
+[
+  {
+    "Product": "Autumns Granola Bar - Cinnamon Almond",
+    "Sales": 18,
+    "Revenue": 38
+  },
+  {
+    "Product": "Bai Antioxidant - Brasilia BB",
+    "Sales": 5,
+    "Revenue": 12.75
+  },
+  {
+    "Product": "Bai Antioxidant - Kula Watermelon",
+    "Sales": 5,
+    "Revenue": 13.75
+  },
+  {
+    "Product": "Bai Antioxidant - Kupang strawberry kiwi",
+    "Sales": 13,
+    "Revenue": 38.5
+  },
+  {
+    "Product": "Bai Antioxidant - Molokai Coconut",
+    "Sales": 12,
+    "Revenue": 30
+  },
+  {
+    "Product": "Bai Antioxidant - Tanzania Lemon Super Tea",
+    "Sales": 70,
+    "Revenue": 195.25
+  },
+  {
+    "Product": "Bai Antioxidant - Zambia Bingcherry",
+    "Sales": 18,
+    "Revenue": 45.75
+  },
+  {
+    "Product": "Bai Lemonade - Burundi Blueberry",
+    "Sales": 10,
+    "Revenue": 25.75
+  },
+  {
+    "Product": "Belvita Breakfast Biscuit Bites - Blueberry",
+    "Sales": 6,
+    "Revenue": 9
+  },
+  {
+    "Product": "Belvita Breakfast Cookies - Blueberry",
+    "Sales": 3,
+    "Revenue": 4.5
+  },
+  {
+    "Product": "Belvita Snack Bites - Cinnamon BS Go Paks",
+    "Sales": 5,
+    "Revenue": 15
+  },
+  {
+    "Product": "Belvita Snack Packs - Blueberry",
+    "Sales": 32,
+    "Revenue": 45.75
+  },
+  {
+    "Product": "Belvita Snack Packs - Chocolate",
+    "Sales": 5,
+    "Revenue": 7.5
+  },
+  {
+    "Product": "Belvita Snack Packs - Cinnamon",
+    "Sales": 2,
+    "Revenue": 2.5
+  },
+  {
+    "Product": "BodyArmor LYTE - Berry Punch",
+    "Sales": 5,
+    "Revenue": 12.5
+  },
+  {
+    "Product": "BodyArmor LYTE - Blueberry Pomegranate",
+    "Sales": 32,
+    "Revenue": 88
+  },
+  {
+    "Product": "BodyArmor LYTE - Peach Mango",
+    "Sales": 41,
+    "Revenue": 108.25
+  },
+  {
+    "Product": "BodyArmor LYTE - Strawberry Lemonade",
+    "Sales": 37,
+    "Revenue": 101.75
+  },
+  {
+    "Product": "Bubly - Blackberry",
+    "Sales": 4,
+    "Revenue": 6
+  },
+  {
+    "Product": "Bubly - Cherry",
+    "Sales": 5,
+    "Revenue": 7.5
+  },
+  {
+    "Product": "Bubly - Grapefruit",
+    "Sales": 3,
+    "Revenue": 4.5
+  },
+  {
+    "Product": "Bubly - Lime",
+    "Sales": 4,
+    "Revenue": 6
+  },
+  {
+    "Product": "Bubly - Mango",
+    "Sales": 5,
+    "Revenue": 7.5
+  },
+  {
+    "Product": "Canada Dry - Ginger Ale",
+    "Sales": 15,
+    "Revenue": 40.5
+  },
+  {
+    "Product": "Canada Dry - Ginger Ale & Lemonde",
+    "Sales": 39,
+    "Revenue": 69.5
+  },
+  {
+    "Product": "Cheetos - Crunchy",
+    "Sales": 29,
+    "Revenue": 43.5
+  },
+  {
+    "Product": "Cheetos - Fleming Hot Crunchy",
+    "Sales": 113,
+    "Revenue": 182
+  },
+  {
+    "Product": "Cheetos Baked - Crunchy Cheese",
+    "Sales": 31,
+    "Revenue": 46.5
+  },
+  {
+    "Product": "Cheetos Baked - Flaming Hot",
+    "Sales": 29,
+    "Revenue": 43.5
+  },
+  {
+    "Product": "Cheetos Cheddar Jalapeno",
+    "Sales": 35,
+    "Revenue": 52.5
+  },
+  {
+    "Product": "Cheetos Flaming Hot Limon Crunchy",
+    "Sales": 97,
+    "Revenue": 154
+  },
+  {
+    "Product": "Cheetos Puffs",
+    "Sales": 39,
+    "Revenue": 58.5
+  },
+  {
+    "Product": "CheezIt - Cheddar Sour Cream and Onion",
+    "Sales": 47,
+    "Revenue": 68.5
+  },
+  {
+    "Product": "CheezIt - Double Cheese",
+    "Sales": 60,
+    "Revenue": 85.5
+  },
+  {
+    "Product": "CheezIt - Go Paks",
+    "Sales": 30,
+    "Revenue": 114
+  },
+  {
+    "Product": "CheezIt - Original",
+    "Sales": 205,
+    "Revenue": 319.25
+  },
+  {
+    "Product": "CheezIt - White Cheddar",
+    "Sales": 76,
+    "Revenue": 112
+  },
+  {
+    "Product": "Chesters Fries Flaming hot",
+    "Sales": 71,
+    "Revenue": 115.5
+  },
+  {
+    "Product": "Chum Fruit Bites - Mango/Strawberry",
+    "Sales": 14,
+    "Revenue": 17.5
+  },
+  {
+    "Product": "Coca Cola - Regular",
+    "Sales": 350,
+    "Revenue": 550.5
+  },
+  {
+    "Product": "Coca Cola - Zero Sugar",
+    "Sales": 648,
+    "Revenue": 987
+  },
+  {
+    "Product": "Doritos Cool Ranch",
+    "Sales": 38,
+    "Revenue": 60
+  },
+  {
+    "Product": "Doritos Dinamita Chile Lemon",
+    "Sales": 24,
+    "Revenue": 34
+  },
+  {
+    "Product": "Doritos Famin Hot Nacho",
+    "Sales": 64,
+    "Revenue": 96
+  },
+  {
+    "Product": "Doritos Nacho Cheese",
+    "Sales": 49,
+    "Revenue": 73.5
+  },
+  {
+    "Product": "Doritos Spicy Nacho",
+    "Sales": 49,
+    "Revenue": 81.5
+  },
+  {
+    "Product": "Fritos - Original",
+    "Sales": 57,
+    "Revenue": 92
+  },
+  {
+    "Product": "Funyuns - Flaming Hot",
+    "Sales": 103,
+    "Revenue": 156.5
+  },
+  {
+    "Product": "Genius Keto Bar - Chocolate Dream",
+    "Sales": 28,
+    "Revenue": 58
+  },
+  {
+    "Product": "Goldfish Baked - Cheddar",
+    "Sales": 157,
+    "Revenue": 208.5
+  },
+  {
+    "Product": "Good Health Veggie Stix - Sea Salt",
+    "Sales": 53,
+    "Revenue": 81
+  },
+  {
+    "Product": "Good Health Veggie Stix - Zesty Ranch",
+    "Sales": 26,
+    "Revenue": 39
+  },
+  {
+    "Product": "Hersheys Milk Chocolate",
+    "Sales": 15,
+    "Revenue": 34.5
+  },
+  {
+    "Product": "Honest Tea - Berry Hibiscus",
+    "Sales": 10,
+    "Revenue": 27.5
+  },
+  {
+    "Product": "Hungry Buddha - Chocolate Chip",
+    "Sales": 13,
+    "Revenue": 26
+  },
+  {
+    "Product": "Hungry Buddha - Coconut Cocoa",
+    "Sales": 6,
+    "Revenue": 12
+  },
+  {
+    "Product": "Iberia Coconut Water",
+    "Sales": 97,
+    "Revenue": 194
+  },
+  {
+    "Product": "Ice Breakers Ice Cubes - PepperMint",
+    "Sales": 24,
+    "Revenue": 120
+  },
+  {
+    "Product": "Jack Links Beef Steak Original",
+    "Sales": 21,
+    "Revenue": 39.5
+  },
+  {
+    "Product": "Jacks Links Bar Beef Strip",
+    "Sales": 33,
+    "Revenue": 66
+  },
+  {
+    "Product": "Keep Healthy - Chocolate Coconut",
+    "Sales": 2,
+    "Revenue": 4
+  },
+  {
+    "Product": "Keep Healthy - Chocolate Fudge",
+    "Sales": 7,
+    "Revenue": 14
+  },
+  {
+    "Product": "Keep Healthy - Sea Salt Brownie",
+    "Sales": 3,
+    "Revenue": 6
+  },
+  {
+    "Product": "Keto Bar - Chocolate Dream",
+    "Sales": 6,
+    "Revenue": 12
+  },
+  {
+    "Product": "Keto Bar - Creamy Peanut Butter Chocolate",
+    "Sales": 67,
+    "Revenue": 139.5
+  },
+  {
+    "Product": "Keto Krisp - Almond Butter",
+    "Sales": 29,
+    "Revenue": 55.5
+  },
+  {
+    "Product": "Keto Krisp - Almond/Chocolate",
+    "Sales": 15,
+    "Revenue": 30.25
+  },
+  {
+    "Product": "KIND Bar - Dark Choc Almond SeaSalt",
+    "Sales": 2,
+    "Revenue": 3
+  },
+  {
+    "Product": "Kinder - Bueno - Crispy Creamy Chocolate",
+    "Sales": 101,
+    "Revenue": 204
+  },
+  {
+    "Product": "KitKat - Crisp Wafers",
+    "Sales": 266,
+    "Revenue": 590.5
+  },
+  {
+    "Product": "Larabar - Peanut Butter chocolate Chip",
+    "Sales": 1,
+    "Revenue": 2
+  },
+  {
+    "Product": "Lays - Barbecue",
+    "Sales": 7,
+    "Revenue": 10.5
+  },
+  {
+    "Product": "Lays - Classic",
+    "Sales": 88,
+    "Revenue": 137
+  },
+  {
+    "Product": "Lays Baked - Barbecue",
+    "Sales": 3,
+    "Revenue": 4.5
+  },
+  {
+    "Product": "Lays Baked - Original",
+    "Sales": 11,
+    "Revenue": 16.5
+  },
+  {
+    "Product": "Lenny & Larrys - Chocolate Chip",
+    "Sales": 51,
+    "Revenue": 121
+  },
+  {
+    "Product": "Lenny & Larrys - SnickerDoodle",
+    "Sales": 45,
+    "Revenue": 127.5
+  },
+  {
+    "Product": "Lindens - Chocolate Chippers",
+    "Sales": 29,
+    "Revenue": 57
+  },
+  {
+    "Product": "Made in Nature - Mangoes Sweet & Tangy",
+    "Sales": 4,
+    "Revenue": 8
+  },
+  {
+    "Product": "Mini Chips Ahoy",
+    "Sales": 62,
+    "Revenue": 158
+  },
+  {
+    "Product": "Mini Chips Ahoy - Go Paks",
+    "Sales": 27,
+    "Revenue": 108
+  },
+  {
+    "Product": "Miss Vickie's Potato Chip - Jalapeno",
+    "Sales": 56,
+    "Revenue": 84
+  },
+  {
+    "Product": "Miss Vickie's Potato Chip - Lime & Cracked Pe",
+    "Sales": 57,
+    "Revenue": 85.5
+  },
+  {
+    "Product": "Miss Vickie's Potato Chip - Sea Salt & Vinega",
+    "Sales": 65,
+    "Revenue": 99
+  },
+  {
+    "Product": "Miss Vickie's Potato Chip - Sea Salt Original",
+    "Sales": 71,
+    "Revenue": 109.5
+  },
+  {
+    "Product": "Miss Vickie's Potato Chip - Smokehouse BBQ",
+    "Sales": 59,
+    "Revenue": 90.5
+  },
+  {
+    "Product": "Monster Energy Original",
+    "Sales": 516,
+    "Revenue": 1552
+  },
+  {
+    "Product": "Monster Energy Zero Ultra",
+    "Sales": 10,
+    "Revenue": 30
+  },
+  {
+    "Product": "Munchies Snack mix Flaming Hot",
+    "Sales": 15,
+    "Revenue": 29.5
+  },
+  {
+    "Product": "Nature's Bakery Fig Bar - Blueberry",
+    "Sales": 78,
+    "Revenue": 124.5
+  },
+  {
+    "Product": "Nature's Bakery Fig Bar - Raspberry",
+    "Sales": 91,
+    "Revenue": 142.5
+  },
+  {
+    "Product": "Nature's Garden Trail Mix - Cranberry Healthy",
+    "Sales": 9,
+    "Revenue": 13.5
+  },
+  {
+    "Product": "Nature's Garden Trail Mix - Heart Healthy Mix",
+    "Sales": 4,
+    "Revenue": 4.5
+  },
+  {
+    "Product": "Nature's Garden Trail Mix - Omega 3",
+    "Sales": 4,
+    "Revenue": 4.5
+  },
+  {
+    "Product": "Nature's Valley Chewy Granola Bar - Fruit & N",
+    "Sales": 1,
+    "Revenue": 1.25
+  },
+  {
+    "Product": "Nature's Valley Crunchy Granola Bar - Oats &",
+    "Sales": 1,
+    "Revenue": 1.25
+  },
+  {
+    "Product": "Newtons Fig Bar",
+    "Sales": 49,
+    "Revenue": 78.5
+  },
+  {
+    "Product": "NuGo Dark Chocolate - Choc Chip",
+    "Sales": 9,
+    "Revenue": 18
+  },
+  {
+    "Product": "NuGo Dark Chocolate - Pretzel Sea Salt",
+    "Sales": 5,
+    "Revenue": 12
+  },
+  {
+    "Product": "Nutri Grain Apple Cinnamon",
+    "Sales": 32,
+    "Revenue": 48
+  },
+  {
+    "Product": "Nutter Butter Bites",
+    "Sales": 32,
+    "Revenue": 41.5
+  },
+  {
+    "Product": "Oberto Specialty Meats - Original",
+    "Sales": 4,
+    "Revenue": 11
+  },
+  {
+    "Product": "Orchard Bar - Cranberry Orange & Walnut",
+    "Sales": 1,
+    "Revenue": 2
+  },
+  {
+    "Product": "Orchard Bar - Pineapple Coconut & Macadamia",
+    "Sales": 1,
+    "Revenue": 2
+  },
+  {
+    "Product": "Orchard Bar - Variety",
+    "Sales": 7,
+    "Revenue": 14
+  },
+  {
+    "Product": "Oreo Mini",
+    "Sales": 137,
+    "Revenue": 236
+  },
+  {
+    "Product": "Oreo Mini - Go Paks",
+    "Sales": 62,
+    "Revenue": 253
+  },
+  {
+    "Product": "Oreo Single Server 6 ct",
+    "Sales": 53,
+    "Revenue": 108
+  },
+  {
+    "Product": "Poland Springs Water",
+    "Sales": 443,
+    "Revenue": 702.5
+  },
+  {
+    "Product": "Pop Corners - Kettle Corn",
+    "Sales": 66,
+    "Revenue": 100.5
+  },
+  {
+    "Product": "Pop Corners - Sea Salt",
+    "Sales": 88,
+    "Revenue": 132
+  },
+  {
+    "Product": "Pop Corners - Spicy Queso",
+    "Sales": 50,
+    "Revenue": 76.5
+  },
+  {
+    "Product": "Pop Corners - Sweet & Salty Kettle",
+    "Sales": 21,
+    "Revenue": 31.5
+  },
+  {
+    "Product": "Pop Corners - White Cheddar",
+    "Sales": 60,
+    "Revenue": 90
+  },
+  {
+    "Product": "Popchips Potato - Barbeque",
+    "Sales": 23,
+    "Revenue": 34.5
+  },
+  {
+    "Product": "Popchips Potato - Sea Salt",
+    "Sales": 29,
+    "Revenue": 43.5
+  },
+  {
+    "Product": "Popchips Potato - Sour Cream & Onion",
+    "Sales": 13,
+    "Revenue": 19.5
+  },
+  {
+    "Product": "Pringles - Cheddar Cheese",
+    "Sales": 39,
+    "Revenue": 122
+  },
+  {
+    "Product": "Pringles - Original",
+    "Sales": 23,
+    "Revenue": 79
+  },
+  {
+    "Product": "Pringles - Sour Cream & Onion",
+    "Sales": 35,
+    "Revenue": 119
+  },
+  {
+    "Product": "Pure Organic Fruit Bar - Pineapple Passion Fr",
+    "Sales": 2,
+    "Revenue": 3
+  },
+  {
+    "Product": "Pure Organic Fruit Bar - Raspberry Lemonade",
+    "Sales": 5,
+    "Revenue": 9.5
+  },
+  {
+    "Product": "Pure Organic Fruit Bar - Strawberry Banana",
+    "Sales": 17,
+    "Revenue": 24.5
+  },
+  {
+    "Product": "Pure Organic Pineapple Passionfruit",
+    "Sales": 5,
+    "Revenue": 5
+  },
+  {
+    "Product": "Quaker Apple Cinnamon Rice Crisps",
+    "Sales": 4,
+    "Revenue": 4
+  },
+  {
+    "Product": "Quaker ButterMilk Ranch Rice Crisps",
+    "Sales": 4,
+    "Revenue": 4.5
+  },
+  {
+    "Product": "Quaker Caramel Rice Crisps",
+    "Sales": 6,
+    "Revenue": 10.5
+  },
+  {
+    "Product": "Quaker Cheddar Rice Crisps",
+    "Sales": 1,
+    "Revenue": 1.5
+  },
+  {
+    "Product": "Red Bull - Energy Drink - Sugar Free",
+    "Sales": 21,
+    "Revenue": 73.5
+  },
+  {
+    "Product": "Red Bull - Original",
+    "Sales": 238,
+    "Revenue": 812
+  },
+  {
+    "Product": "Remedy Kombucha - Ginger Lemon",
+    "Sales": 2,
+    "Revenue": 6
+  },
+  {
+    "Product": "Ritz Bits Cheese",
+    "Sales": 35,
+    "Revenue": 51
+  },
+  {
+    "Product": "Ritz Bits Peanut Butter",
+    "Sales": 13,
+    "Revenue": 21
+  },
+  {
+    "Product": "Robert Irvine's - Fit Crunch - Chocolate Pea",
+    "Sales": 173,
+    "Revenue": 346
+  },
+  {
+    "Product": "Ruffles Baked - Cheddar & Sour Cream",
+    "Sales": 18,
+    "Revenue": 30
+  },
+  {
+    "Product": "RXBAR - Protein Bar - Chocolate Sea Salt",
+    "Sales": 42,
+    "Revenue": 84
+  },
+  {
+    "Product": "RXBAR - Protein Bar - Peanut Butter",
+    "Sales": 40,
+    "Revenue": 80
+  },
+  {
+    "Product": "S. Pellegrino Essenza Mineral Water - Blood O",
+    "Sales": 15,
+    "Revenue": 37.5
+  },
+  {
+    "Product": "S. Pellegrino Sparkling Mineral Water",
+    "Sales": 68,
+    "Revenue": 136
+  },
+  {
+    "Product": "Seapoint Farms Dry Roasted Edamame - Wasabi",
+    "Sales": 39,
+    "Revenue": 96.5
+  },
+  {
+    "Product": "Simply Protein - Dark Chocolate Sea Salt",
+    "Sales": 15,
+    "Revenue": 32
+  },
+  {
+    "Product": "Simply Protein - Lemon Coconut",
+    "Sales": 31,
+    "Revenue": 62
+  },
+  {
+    "Product": "Simply Protein - Peanut Butter Chocolate",
+    "Sales": 22,
+    "Revenue": 44
+  },
+  {
+    "Product": "Skinny Pop Popcorn",
+    "Sales": 15,
+    "Revenue": 22.5
+  },
+  {
+    "Product": "Skippy Peanut Butter - Go Paks",
+    "Sales": 2,
+    "Revenue": 9
+  },
+  {
+    "Product": "Snapple Diet Tea - Lemon",
+    "Sales": 95,
+    "Revenue": 242.5
+  },
+  {
+    "Product": "Snapple Diet Tea - Peach Tea",
+    "Sales": 116,
+    "Revenue": 290
+  },
+  {
+    "Product": "Snapple Diet Tea - Raspberry",
+    "Sales": 34,
+    "Revenue": 85
+  },
+  {
+    "Product": "Snapple Lemonade - black berry",
+    "Sales": 8,
+    "Revenue": 20
+  },
+  {
+    "Product": "Snapple Lemonade - pineapple",
+    "Sales": 8,
+    "Revenue": 20
+  },
+  {
+    "Product": "Snapple Lemonade - watermelon",
+    "Sales": 8,
+    "Revenue": 20
+  },
+  {
+    "Product": "Snapple Tea - Lemon",
+    "Sales": 103,
+    "Revenue": 265
+  },
+  {
+    "Product": "Snapple Tea - Peach",
+    "Sales": 68,
+    "Revenue": 170
+  },
+  {
+    "Product": "Snapple Tea - Raspberry",
+    "Sales": 139,
+    "Revenue": 350.75
+  },
+  {
+    "Product": "Snyder's of Hanover Pretzel - Cheddar Cheese",
+    "Sales": 22,
+    "Revenue": 45
+  },
+  {
+    "Product": "Snyder's of Hanover Pretzel Pieces - Cheddar",
+    "Sales": 19,
+    "Revenue": 52.5
+  },
+  {
+    "Product": "Snyder's of Hanover Pretzel Pieces - Honey Mu",
+    "Sales": 35,
+    "Revenue": 76.5
+  },
+  {
+    "Product": "Snyder's of Hanover Pretzel Pieces - Hot Buff",
+    "Sales": 27,
+    "Revenue": 62
+  },
+  {
+    "Product": "Spindrift - Sparkling Water - Pineapple",
+    "Sales": 55,
+    "Revenue": 84
+  },
+  {
+    "Product": "Spindrift - Sparkling Water Grapefruit",
+    "Sales": 10,
+    "Revenue": 15
+  },
+  {
+    "Product": "Spindrift - Sparkling Water Lime",
+    "Sales": 59,
+    "Revenue": 88.5
+  },
+  {
+    "Product": "Spindrift - Sparkling Water Raspberry Lime",
+    "Sales": 2,
+    "Revenue": 3
+  },
+  {
+    "Product": "Starbucks Doubleshot Energy - Coffee",
+    "Sales": 25,
+    "Revenue": 90
+  },
+  {
+    "Product": "Starbucks Doubleshot Energy - Mocha",
+    "Sales": 132,
+    "Revenue": 470.5
+  },
+  {
+    "Product": "Starbucks Refresher - Real Coconut Water",
+    "Sales": 111,
+    "Revenue": 337
+  },
+  {
+    "Product": "Stretch Island Fruit Leathers Snacks - Variet",
+    "Sales": 7,
+    "Revenue": 7
+  },
+  {
+    "Product": "SunChips Multigrain - French Onion",
+    "Sales": 47,
+    "Revenue": 70.5
+  },
+  {
+    "Product": "SunChips Multigrain - Harvest Cheddar",
+    "Sales": 233,
+    "Revenue": 352.5
+  },
+  {
+    "Product": "SunChips Multigrain - Original",
+    "Sales": 152,
+    "Revenue": 234
+  },
+  {
+    "Product": "SunChips Multigrain - Salsa",
+    "Sales": 198,
+    "Revenue": 307.5
+  },
+  {
+    "Product": "Sunkist Soda - Orange",
+    "Sales": 290,
+    "Revenue": 381.5
+  },
+  {
+    "Product": "Takis - Hot Chilli Pepper & Lime",
+    "Sales": 96,
+    "Revenue": 144.5
+  },
+  {
+    "Product": "Takis FUGEO mini",
+    "Sales": 79,
+    "Revenue": 123.75
+  },
+  {
+    "Product": "Teddy Grahams - Go Paks",
+    "Sales": 20,
+    "Revenue": 77
+  },
+  {
+    "Product": "TruBar - Cookie Dough",
+    "Sales": 7,
+    "Revenue": 17.5
+  },
+  {
+    "Product": "TruBar - Daydreaming about Donuts",
+    "Sales": 7,
+    "Revenue": 17.5
+  },
+  {
+    "Product": "V8 Vegetable Juice - Original",
+    "Sales": 28,
+    "Revenue": 48.5
+  },
+  {
+    "Product": "Vitamin Water - Ice Cool Blue Lavender",
+    "Sales": 10,
+    "Revenue": 29.25
+  },
+  {
+    "Product": "Vitamin Water - Squeezed Lemonade",
+    "Sales": 25,
+    "Revenue": 67.75
+  },
+  {
+    "Product": "Vitamin Water - XXX Acai BB Pomegranate",
+    "Sales": 17,
+    "Revenue": 46.75
+  },
+  {
+    "Product": "Wonderful Pistachios - Variety",
+    "Sales": 192,
+    "Revenue": 392
+  },
+  {
+    "Product": "Zevia Organic Tea - Peach",
+    "Sales": 4,
+    "Revenue": 10
+  },
+  {
+    "Product": "Zevia Zero Calorie Energy - Mango Ginger",
+    "Sales": 6,
+    "Revenue": 15
+  },
+  {
+    "Product": "Zone Perfect - Chocolate Chip Cookie Dough",
+    "Sales": 4,
+    "Revenue": 8
+  },
+  {
+    "Product": "Grand Total",
+    "Sales": 9611,
+    "Revenue": 19084.25
+  }
+]

@@ -113,3 +113,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }};
     
 });
+
+// PRODUCT TABLE //
+const tabel = new XMLHttpRequest();
+tabel.open('GET', 'Resources/filejson/websitetable.json', true);
+tabel.send();
+tabel.onreadystatechange = function () {
+  if(tabel.readyState == 4 && this.status == 200) {
+    let tabelData = JSON.parse(this.responseText).map(e => e);
+    console.log(tabelData);
+      let value = tabelData.map(e => [e.Product, e.Sales, e.Revenue]);
+      function handleData(value) {
+        console.log(value); 
+        if (Array.isArray(value)) {
+          console.log("Length:", value.length); 
+        } else if (typeof value === 'object' && value !== null) {
+          console.log("Length:", Object.keys(value).length); 
+        } else {
+          console.log("Data is not an array or object.");
+        }
+      }
+      new gridjs.Grid({
+        columns: ["Product","Revenue", "Sales"],
+        data: value,
+        pagination: {
+            limit: 5,
+            summary: false
+        },
+        search: true,
+        sort: true,
+        resizable: true,
+        style: {
+            table: {
+              border: '3px solid #ccc'
+            },
+            th: {
+              'background-color': '#6d9773',
+              color: '#000',
+              'border-bottom': '3px solid #ccc',
+              'text-align': 'center'
+            },
+            td: {
+              'text-align': 'center'
+            }
+          }
+      }).render(document.getElementById("productTable"));
+  }
+}
