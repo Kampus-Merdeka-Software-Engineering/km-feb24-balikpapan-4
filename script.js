@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // CHART DASHBOARD //
-    var dashboard = new XMLHttpRequest();
-    var url = "https://api.jsonbin.io/v3/b/66503f4bacd3cb34a84cbce2"
-    dashboard.open('GET', url, true);
-    dashboard.send();
-    dashboard.onreadystatechange = function () {
+// CHART DASHBOARD //
+var dashboard = new XMLHttpRequest();
+var url = "https://api.jsonbin.io/v3/b/66503f4bacd3cb34a84cbce2"
+dashboard.open('GET', url, true);
+dashboard.send();
+dashboard.onreadystatechange = function () {
     if(this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText);
         var month = data.record.cleaning.map(e => e.Month).filter(Boolean);
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
-// PRODUCT TABLE //
+// Tabel Produk //
 const tabel = new XMLHttpRequest();
 tabel.open('GET', 'Resources/filejson/websitetable.json', true);
 tabel.send();
@@ -159,4 +159,4 @@ tabel.onreadystatechange = function () {
           }
       }).render(document.getElementById("productTable"));
   }
-}
+};
