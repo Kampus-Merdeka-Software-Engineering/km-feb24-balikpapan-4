@@ -166,25 +166,24 @@ nav {
     justify-content: center;
     position: relative;
     width: 100%;
-
+    padding: 0;
 
     h3 {
         color: #0D3B2E;
-        font-size: 40px;
+        font-size: 2em;
         font-weight: 900;
     }
 }
 
 .our-team-header {
     background-color: #6d9773;
-    padding: 20px 80px;
     margin: 0;
     border-radius: 15px;
 
     h3 {
         margin: 0;
         color: white;
-
+        margin: 20px 80px;
     }
 }
 
