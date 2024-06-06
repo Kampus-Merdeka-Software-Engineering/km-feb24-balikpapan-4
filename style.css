@@ -1,4 +1,5 @@
-*, body,
+*,
+body,
 html {
     margin: 0;
     padding: 0;
@@ -122,16 +123,20 @@ nav {
 .hero p {
     margin: 10px 0;
 }
+
 .hero-text p {
     margin: 25px 0px;
 }
-.home-text span{
-    font-size: 18px; 
+
+.home-text span {
+    font-size: 18px;
     margin-right: 5px
 }
-.home-text strong{
+
+.home-text strong {
     color: #feba01
 }
+
 .btn {
     background-color: #FEBA01;
     color: black;
@@ -140,7 +145,7 @@ nav {
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
-    
+
 }
 
 .btn:hover {
@@ -440,18 +445,27 @@ canvas {
     background-color: #6d9773;
     height: fit-content;
 }
-.request-text{
-    color: white; padding: 0px 50px
+
+.request-text {
+    color: white;
+    padding: 0px 50px
 }
-.request-text img{
-    width: 50%; height: auto
+
+.request-text img {
+    width: 50%;
+    height: auto
 }
-.request-text h1{
-    font-size: 34px; margin-bottom: 0px
+
+.request-text h1 {
+    font-size: 34px;
+    margin-bottom: 0px
 }
-.request-text p{
-    font-size: 20px; margin-top: 0px
+
+.request-text p {
+    font-size: 20px;
+    margin-top: 0px
 }
+
 #request-data form {
     width: 50%;
     padding: 20px;
@@ -483,22 +497,27 @@ td div select {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.form-phone{
+
+.form-phone {
     flex-direction: row !important;
 }
-.form-phone select{
+
+.form-phone select {
     margin-right: 10px;
 }
-.form-phone input{
+
+.form-phone input {
     width: 100%;
 }
-#form-btn{
+
+#form-btn {
     border: none;
     border-radius: 25px;
     font-size: 18px;
     padding: 10px 20px;
     margin-top: 10px;
 }
+
 footer {
     background-color: #004d40;
     color: white;
@@ -507,9 +526,11 @@ footer {
     bottom: 0;
     width: 100%;
 }
-footer p{
+
+footer p {
     margin: 0px;
 }
+
 .media-profile {
     height: 175px;
     width: 150px;
@@ -592,13 +613,58 @@ footer p{
     width: 100%;
     border-radius: 10px;
 }
-.data-analytics{
+
+.data-analytics {
     height: fit-content
 }
+
 .data-analytics h1 {
     margin: 0px;
     text-align: center;
     color: #1a3b2f;
     font-weight: bold;
     font-size: 34px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-icon {
+    width: 50px;
+    height: 50px;
 }
