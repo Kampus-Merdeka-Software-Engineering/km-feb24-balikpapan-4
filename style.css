@@ -1,4 +1,4 @@
-body,
+*, body,
 html {
     margin: 0;
     padding: 0;
@@ -258,31 +258,36 @@ nav {
     }
 }
 
-.our-team-button-wrapper {
+.button-container {
     display: flex;
-
+    gap: 20px;
 }
 
-.our-team-button {
-    border-radius: 15px;
-    height: 55px;
-    width: 55px;
-    padding: 12px auto;
+.arrow-button {
     background-color: #6d9773;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+}
 
-    p {
-        color: white;
-        opacity: 50%;
-        text-align: center;
-        font-size: 25px;
-        font-family: arial;
-        margin: 0;
+.arrow-button.left:hover {
+    background-color: #507055;
+    transform: translateX(-10px);
+}
 
-    }
+.arrow-button.right:hover {
+    background-color: #507055;
+    transform: translateX(10px);
 }
 
 
