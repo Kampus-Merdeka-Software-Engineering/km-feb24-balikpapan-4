@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    emailjs.init("W_-5ybZnrcqnM9V5T");
+
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu a');
 
@@ -17,6 +19,62 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach(section => {
         observer.observe(section);
     });
+
+    // Function to send email
+    function sendEmail(event) {
+        event.preventDefault();
+
+        const form = document.getElementById('data-request');
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        var firstName = document.getElementById("first_name").value;
+        var lastName = document.getElementById("last_name").value;
+        var fromName = firstName + " " + lastName;
+        var userEmail = document.getElementById("email_id").value;
+
+        var params = {
+            from_name: fromName,
+            email_id: userEmail,
+            link_data: "https://docs.google.com/spreadsheets/d/1sdM9kFYGPQx5SV5olkhqEm2uvAaQPpUUhNV3XrNK1lg/edit?usp=sharing",
+            phone_number: document.getElementById("phone_number").value,
+            type_data: document.getElementById("type_data").value,
+            type_reason: document.getElementById("type_reason").value
+        };
+
+        // send email to dev
+        emailjs.send("service_vqmifvf", "template_2wcp8n8", params)
+            .then(function (res) {
+                var modal = document.getElementById("successModal");
+                var dataType = document.getElementById("type_data").value;
+                // Update modal message with link
+                document.getElementById("modalMessage").innerHTML = `Thank you for filling out the form. Please access data [${dataType}] <a href="${params.link_data}" target="_blank">here</a>.`;
+                modal.style.display = "block";
+                document.getElementById("data-request").reset();
+            }, function (error) {
+                alert("Failed to send email. Error: " + error.text);
+            });
+
+    }
+
+    // Attach sendEmail function to the form submit event
+    document.getElementById("data-request").addEventListener("submit", sendEmail);
+    // Modal handling
+    var modal = document.getElementById("successModal");
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
 });
 
 // CHART DASHBOARD //
