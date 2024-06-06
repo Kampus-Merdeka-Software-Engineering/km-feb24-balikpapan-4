@@ -1,303 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="displayContent(0)">
+    <header>
+      <nav>
+        <div class="logo"><span>VENDING</span><span>MACHINE</span></div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#data-analytics">DATA ANALYTICS</a></li>
+          <li><a href="#request-data">REQUEST DATA</a></li>
+          <li><a href="#our-team">PROFILE TEAM</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <h1>WELCOME TO THE WEBSITE</h1>
+          <h1 class="home-text">
+            <span>Created By</span><strong>GROUP 4 BALIKPAPAN</strong>
+          </h1>
+          <p>
+            This website was built for as a sign the end of learning at ReVou
+            KM.<br />To find out more please click the button below
+          </p>
+          <a href="#" class="btn">MORE INFO ABOUT US</a>
+        </div>
+      </section>
+      <section class="promotion">
+        <div class="promotion-text">
+          <h1>Vending Machine <span>May</span> Promotion</h1>
+          <p>Get It While It's HOT</p>
+          <div class="promotion-details">
+            <div class="detail">
+              <h2>$0</h2>
+              <p>Down Money</p>
+            </div>
+            <div class="detail">
+              <h2>12</h2>
+              <p>Months</p>
+            </div>
+            <div class="detail">
+              <h2>0%</h2>
+              <p>Interest Rate</p>
+            </div>
+          </div>
+        </div>
+        <div class="promotion-image">
+          <img
+            src="https://www.autovending.com.au/wp-content/uploads/2020/01/Merchant-MEDIA-6-Combi-Hi-Res.jpg"
+            alt="Vending Machine"
+            height="300"
+          />
+        </div>
+      </section>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vending Machine</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body onload="displayContent(0)">
-  <header>
-    <nav>
-      <div class="logo"><span>VENDING</span><span>MACHINE</span></div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <ul class="menu">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#data-analytics">DATA ANALYTICS</a></li>
-        <li><a href="#request-data">REQUEST DATA</a></li>
-        <li><a href="#our-team">PROFILE TEAM</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-text">
-        <h1>WELCOME TO THE WEBSITE</h1>
-        <h1 class="home-text">
-          <span>Created By</span><strong>GROUP 4 BALIKPAPAN</strong>
+      <!-- Dashboard -->
+      <section id="data-analytics" class="data-analytics" >
+        <h1>
+          DASHBOARD MENTORING
         </h1>
-        <p>
-          This website was built for as a sign the end of learning at ReVou
-          KM.<br />To find out more please click the button below
-        </p>
-        <a href="#" class="btn">MORE INFO ABOUT US</a>
-      </div>
-    </section>
-    <section class="promotion">
-      <div class="promotion-text">
-        <h1>Vending Machine <span>May</span> Promotion</h1>
-        <p>Get It While It's HOT</p>
-        <div class="promotion-details">
-          <div class="detail">
-            <h2>$0</h2>
-            <p>Down Money</p>
+        <h1>
+          VENDING MACHINE
+        </h1>
+
+        <div class="container" >
+          <!-- Chart top used maschine -->
+          <div class="chart-card">
+            <h2>TOP MACHINE USED</h2>
+            <p>
+              The most vending machine use is GuttenPlans x1367 which is in the
+              GuttenPlans area
+            </p>
+            <canvas id="topMachineChart"></canvas>
           </div>
-          <div class="detail">
-            <h2>12</h2>
-            <p>Months</p>
-          </div>
-          <div class="detail">
-            <h2>0%</h2>
-            <p>Interest Rate</p>
+
+          <!-- Chart transaction type -->
+          <div class="chart-card">
+            <h2>TRANSACTION TYPE</h2>
+            <p>
+              The type of transaction that is often used is cash.<br />The
+              difference in comparison is more than 50%
+            </p>
+            <canvas id="transactionTypeChart"></canvas>
           </div>
         </div>
-      </div>
-      <div class="promotion-image">
-        <img src="https://www.autovending.com.au/wp-content/uploads/2020/01/Merchant-MEDIA-6-Combi-Hi-Res.jpg"
-          alt="Vending Machine" height="300" />
-      </div>
-    </section>
 
-    <!-- Dashboard -->
-    <section id="data-analytics" class="data-analytics">
-      <h1>DASHBOARD MENTORING</h1>
-      <h1>VENDING MACHINE</h1>
+        <!-- Chart sales trend -->
+        <div class="chart-card" >
+          <h2>SALES TREND</h2>
+          <p>Monthly revenue and sales charts</p>
+          <canvas id="salesTrendChart"></canvas>
+        </div>
 
-      <div class="container">
-        <!-- Chart top used maschine -->
-        <div class="chart-card">
-          <h2>TOP MACHINE USED</h2>
+        <!-- Chart tabel produk -->
+        <div class="table-card">
+          <h2>PRODUCT TABLE</h2>
+          <table id="productTable"></table>
+        </div>
+      </section>
+
+      <section id="request-data">
+        <div class="request-text">
+          <img
+            src="./Resources/Image/logo.png"
+            alt="logo"
+          />
+          <h1>DATA REQUEST</h1>
           <p>
-            The most vending machine use is GuttenPlans x1367 which is in the
-            GuttenPlans area
+            Data Request Form to Get Desired Data
           </p>
-          <canvas id="topMachineChart"></canvas>
         </div>
-
-        <!-- Chart transaction type -->
-        <div class="chart-card">
-          <h2>TRANSACTION TYPE</h2>
-          <p>
-            The type of transaction that is often used is cash.<br />The
-            difference in comparison is more than 50%
-          </p>
-          <canvas id="transactionTypeChart"></canvas>
-        </div>
-      </div>
-
-      <!-- Chart sales trend -->
-      <div class="chart-card">
-        <h2>SALES TREND</h2>
-        <p>Monthly revenue and sales charts</p>
-        <canvas id="salesTrendChart"></canvas>
-      </div>
-
-      <!-- Chart tabel produk -->
-      <div class="table-card">
-        <h2>PRODUCT TABLE</h2>
-        <p>Sales and Revenue from products</p>
-        <table id="productTable"></table>
-      </div>
-    </section>
-
-    <section id="request-data">
-      <div class="request-text">
-        <img src="./Resources/Image/logo.png" alt="logo" />
-        <h1>DATA REQUEST</h1>
-        <p>Data Request Form to Get Desired Data</p>
-      </div>
-      <form id="data-request">
-        <table>
-          <tr>
-            <td>
-              <div>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+"
-                  title="First name should contain only letters" required />
-              </div>
-            </td>
-            <td>
-              <div>
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" pattern="[A-Za-z]+"
-                  title="Last name should contain only letters" required />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <div>
-                <label for="email">Email</label>
-                <input type="email" id="email_id" name="email_id" required />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <div>
-                <label for="ext">Phone Number</label>
-                <div class="form-phone">
-                  <select type="number" id="ext" name="ext" required>
-                    <option value="+62">+62</option>
+        <form action="">
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    required
+                  />
+                </div>
+              </td>
+              <td>
+                <div>
+                  <label for="last_name">Last Name</label>
+                  <input type="text" id="last_name" name="last_name" required />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="ext">Phone Number</label>
+                  <div class="form-phone" >
+                    <select
+                      type="number"
+                      id="ext"
+                      name="ext"
+                      required
+                    >
+                      <option value="+62">+62</option>
+                    </select>
+                    <input type="number" required />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="data">Data</label>
+                  <select id="data" name="data" required>
+                    <option value="" disabled selected></option>
+                    <option value="data1">Data 1</option>
+                    <option value="data2">Data 2</option>
+                    <option value="data3">Data 3</option>
                   </select>
-                  <input type="number" id="phone_number" name="phone_number" required />
                 </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <div>
-                <label for="data">Data</label>
-                <select id="type_data" name="type_data" required>
-                  <option value="" disabled selected></option>
-                  <option value="Sales Trend">Sales Trend</option>
-                  <option value="Transaction Type">Transaction Type</option>
-                  <option value="Top Machine Used">Top Machine Used</option>
-                  <option value="Revenue By Category">Revenue By Category</option>
-                  <option value="Revenue By Location">Revenue By Location</option>
-                  <option value="Monthly Growth Rate">Monthly Growth Rate</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <div>
-                <label for="reason">Reason</label>
-                <select id="type_reason" name="type_reason" required>
-                  <option value="" disabled selected></option>
-                  <option value="For Business Purposes">For Business Purposes</option>
-                  <option value="For Research Purposes">For Research Purposes</option>
-                  <option value="For Personal Use">For Personal Use</option>
-                  <option value="Another Reason">Another Reason</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button onclick="sendEmail()" class="btn" id="form-btn">
-                Submit
-              </button>
-            </td>
-          </tr>
-        </table>
-      </form>
-    </section>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <label for="reason">Reason</label>
+                  <select id="reason" name="reason" required>
+                    <option value="" disabled selected></option>
+                    <option value="data1">Reason 1</option>
+                    <option value="data2">Reason 2</option>
+                    <option value="data3">Reason 3</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="submit"
+                  class="btn"
+                  id="form-btn"
+                >
+                  Submit
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
 
-    <!-- popup modal -->
-    <div id="successModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <img src="./Resources/Image/checkmark.png" alt="Success" class="modal-icon">
-        <h2>Thank you for filling out the form</h2>
-        <a id="modalMessage"
-          href="https://docs.google.com/spreadsheets/d/1sdM9kFYGPQx5SV5olkhqEm2uvAaQPpUUhNV3XrNK1lg/edit?usp=sharing">Please
-          access data here</a>
-      </div>
-    </div>
+      <section class="our-team-wrapper" id="our-team">
+        <div class="our-team-header shadow">
+          <h3>OUR TEAM</h3>
+        </div>
 
-    <section class="our-team-wrapper" id="our-team">
-      <div class="our-team-header shadow">
-        <h3>OUR TEAM</h3>
-      </div>
-
-      <div class="our-team-container">
-        <div class="our-team-main-card">
-          <div class="our-team-cards">
-            <div class="our-team-card">
-              <div class="our-team-photo shadow">
-                <div class="our-team-role" id="our-team-role">
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
-                  <div class="role1"></div>
+        <div class="our-team-container">
+          <div class="our-team-main-card">
+            <div class="our-team-cards">
+              <div class="our-team-card">
+                <div class="our-team-photo shadow">
+                  <div class="our-team-role" id="our-team-role">
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                    <div class="role1"></div>
+                  </div>
+                  <img
+                    src="Resources\team\Audina.png"
+                    alt="Photo"
+                    class="image-front"
+                    id="our-team-image1"
+                  />
                 </div>
-                <img src="Resources\team\Audina.png" alt="Photo" class="image-front" id="our-team-image1" />
-              </div>
-              <div class="our-team-name-wrapper shadow">
-                <div class="our-team-name" id="our-team-name1"></div>
-              </div>
-            </div>
-            <div class="our-team-card">
-              <div class="our-team-photo shadow">
-                <div class="our-team-role" id="our-team-role">
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
-                  <div class="role2"></div>
+                <div class="our-team-name-wrapper shadow">
+                  <div class="our-team-name" id="our-team-name1"></div>
                 </div>
-                <img src="Resources\team\Audina.png" alt="Photo" class="image-front" id="our-team-image2" />
               </div>
-              <div class="our-team-name-wrapper shadow">
-                <div class="our-team-name" id="our-team-name2"></div>
-              </div>
-            </div>
-            <div class="our-team-card">
-              <div class="our-team-photo shadow">
-                <div class="our-team-role" id="our-team-role">
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
-                  <div class="role3"></div>
+              <div class="our-team-card">
+                <div class="our-team-photo shadow">
+                  <div class="our-team-role" id="our-team-role">
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                    <div class="role2"></div>
+                  </div>
+                  <img
+                    src="Resources\team\Audina.png"
+                    alt="Photo"
+                    class="image-front"
+                    id="our-team-image2"
+                  />
                 </div>
-                <img src="Resources\team\Audina.png" alt="Photo" class="image-front" id="our-team-image3" />
+                <div class="our-team-name-wrapper shadow">
+                  <div class="our-team-name" id="our-team-name2"></div>
+                </div>
               </div>
-              <div class="our-team-name-wrapper shadow">
-                <div class="our-team-name" id="our-team-name3"></div>
+              <div class="our-team-card">
+                <div class="our-team-photo shadow">
+                  <div class="our-team-role" id="our-team-role">
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                    <div class="role3"></div>
+                  </div>
+                  <img
+                    src="Resources\team\Audina.png"
+                    alt="Photo"
+                    class="image-front"
+                    id="our-team-image3"
+                  />
+                </div>
+                <div class="our-team-name-wrapper shadow">
+                  <div class="our-team-name" id="our-team-name3"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="button-container">
-        <button class="arrow-button left" onclick="prevSlide()">
-          &#8592;
-        </button>
-        <button class="arrow-button right" onclick="nextSlide()">
-          &#8594;
-        </button>
-      </div>
-    </section>
+        <div class="our-team-button-wrapper">
+          <button class="our-team-button shadow" onclick="prevSlide()">
+            <p><</p>
+          </button>
+          <button class="our-team-button shadow" onclick="nextSlide()">
+            <p>></p>
+          </button>
+        </div>
+      </section>
 
-    <footer>
-      <p>&copy; 2024 Kelompok 4 Balikpapan</p>
-      <p>All Rights Reserved</p>
-    </footer>
-  </main>
+      <footer>
+        <p>&copy; 2024 Kelompok 4 Balikpapan</p>
+        <p>All Rights Reserved</p>
+      </footer>
+    </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-  <script src="script.js"></script>
-  <script src="slider.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+  </body>
 </html>

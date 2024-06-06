@@ -236,3 +236,7 @@ tabel.onreadystatechange = function () {
         }).render(document.getElementById("productTable"));
     }
 };
+
+const navHeight = document.querySelector('.menu').offsetHeight;
+
+document.documentElement.style.setProperty('--scroll-padding', navHeight + 50 +"px");
