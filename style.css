@@ -415,6 +415,19 @@ section {
     text-align: center
 }
 
+.table-card {
+    color: #1a3b2f;
+    background-color: white;
+    border: 1px solid #1a3b2f;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    height: max-content;
+    margin-top: 25px
+}
+
 canvas {
     width: 100% !important;
     max-height: 200px;
