@@ -56,6 +56,16 @@ function displayContent(index) {
     for (let i = 0; i < role3Elements.length; i++) {
         role3Elements[i].textContent = content[index + 2].role;
     }
+
+    let card = document.getElementsByClassName("our-team-card");
+    for (let i = 0; i < card.length; i++) {
+        card[i].classList.add("shake");
+
+        // Remove the shake class after the animation ends to allow it to be reapplied on the next click
+        card[i].addEventListener('animationend', () => {
+            card[i].classList.remove('shake');
+        }, { once: true });
+    }
 }
 
 // Function to start the automatic slide show
@@ -66,6 +76,7 @@ function startAutoSlide() {
         }
         else{
             currentIndex = 0;
+            displayContent(0);
         }
         
     }, 3000); // Change 3000 to any interval time in milliseconds
