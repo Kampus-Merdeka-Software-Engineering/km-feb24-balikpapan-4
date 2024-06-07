@@ -67,15 +67,11 @@
       </section>
 
       <!-- Dashboard -->
-      <section id="data-analytics" class="data-analytics" >
-        <h1>
-          DASHBOARD MENTORING
-        </h1>
-        <h1>
-          VENDING MACHINE
-        </h1>
+      <section id="data-analytics" class="data-analytics">
+        <h1>DASHBOARD MENTORING</h1>
+        <h1>VENDING MACHINE</h1>
 
-        <div class="container" >
+        <div class="container">
           <!-- Chart top used maschine -->
           <div class="chart-card">
             <h2>TOP MACHINE USED</h2>
@@ -98,7 +94,7 @@
         </div>
 
         <!-- Chart sales trend -->
-        <div class="chart-card" >
+        <div class="chart-card">
           <h2>SALES TREND</h2>
           <p>Monthly revenue and sales charts</p>
           <canvas id="salesTrendChart"></canvas>
@@ -113,14 +109,9 @@
 
       <section id="request-data">
         <div class="request-text">
-          <img
-            src="./Resources/Image/logo.png"
-            alt="logo"
-          />
+          <img src="./Resources/Image/logo.png" alt="logo" />
           <h1>DATA REQUEST</h1>
-          <p>
-            Data Request Form to Get Desired Data
-          </p>
+          <p>Data Request Form to Get Desired Data</p>
         </div>
         <form action="">
           <table>
@@ -155,13 +146,8 @@
               <td colspan="2">
                 <div>
                   <label for="ext">Phone Number</label>
-                  <div class="form-phone" >
-                    <select
-                      type="number"
-                      id="ext"
-                      name="ext"
-                      required
-                    >
+                  <div class="form-phone">
+                    <select type="number" id="ext" name="ext" required>
                       <option value="+62">+62</option>
                     </select>
                     <input type="number" required />
@@ -197,13 +183,7 @@
             </tr>
             <tr>
               <td>
-                <button
-                  type="submit"
-                  class="btn"
-                  id="form-btn"
-                >
-                  Submit
-                </button>
+                <button type="submit" class="btn" id="form-btn">Submit</button>
               </td>
             </tr>
           </table>
@@ -312,6 +292,7 @@
       </footer>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
     <link
