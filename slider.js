@@ -23,6 +23,7 @@ function prevSlide() {
     if (currentIndex > 0) {
         currentIndex = (currentIndex - 1 + content.length) % content.length;
         displayContent(currentIndex);
+        resetAutoSlide();
     }
 }
 
@@ -31,6 +32,7 @@ function nextSlide() {
     if (currentIndex < (content.length - 3)) {
         currentIndex = (currentIndex + 1) % content.length;
         displayContent(currentIndex);
+        resetAutoSlide();
     }
 }
 
@@ -73,18 +75,22 @@ function startAutoSlide() {
     autoSlideInterval = setInterval(() => {
         if (currentIndex < (content.length - 3)) {
             nextSlide();
-        }
-        else{
+        } else {
             currentIndex = 0;
             displayContent(0);
         }
-        
     }, 3000); // Change 3000 to any interval time in milliseconds
 }
 
 // Function to stop the automatic slide show
 function stopAutoSlide() {
     clearInterval(autoSlideInterval);
+}
+
+// Function to reset the automatic slide show
+function resetAutoSlide() {
+    stopAutoSlide();
+    startAutoSlide();
 }
 
 // Display initial content
