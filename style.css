@@ -5,6 +5,8 @@ html {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: var( --scroll-padding, 100px);
 }
 
 header {
