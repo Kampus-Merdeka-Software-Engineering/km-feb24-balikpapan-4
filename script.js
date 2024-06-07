@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // CHART DASHBOARD //
 
 // Top Machine Used //
+const topMachineCtx = document.getElementById('topMachineChart');
+var usedMachine;
 var dashboard = new XMLHttpRequest();
 dashboard.open('GET', 'Resources/filejson/topUsedMachine.json', true);
 dashboard.send();
@@ -89,8 +91,31 @@ dashboard.onreadystatechange = function () {
         var machine = mesin.map(e => e.Machine);
         var salesMachine = mesin.map(e => e.Sales);
 
-        const topMachineCtx = document.getElementById('topMachineChart');
-        new Chart(topMachineCtx, {
+        var machineFilter = document.getElementById('chartFilterMachine');
+
+        machine.forEach(function(m, index){
+            var option = document.createElement('option');
+            option.value = index;
+            option.textContent = m;
+            machineFilter.appendChild(option);
+        });
+
+        machineFilter.addEventListener('change', function(){
+            var selectedIndex = parseInt(this.value);
+            var selectedMachine = selectedIndex === -1 ? machine : [machine[selectedIndex]];
+            var selectedSales = selectedIndex === -1 ? salesMachine : [salesMachine[selectedIndex]];
+        
+            updateChart(selectedMachine, selectedSales)
+        });
+        updateChart(machine, salesMachine)
+    }
+};
+    function updateChart(machine, salesMachine){
+
+        if(usedMachine){
+            usedMachine.destroy();
+        }
+        usedMachine = new Chart(topMachineCtx, {
             type: 'bar',
             data: {
                 labels: machine,
@@ -112,9 +137,10 @@ dashboard.onreadystatechange = function () {
             }
         });
     }
-};
+
 
 // Transaction Type //
+
 var dashboard = new XMLHttpRequest();
 dashboard.open('GET', 'Resources/filejson/transactionType.json', true);
 dashboard.send();
