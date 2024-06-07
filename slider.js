@@ -70,6 +70,14 @@ function displayContent(index) {
     }
 }
 
+function animationSlider(element){
+    element.classList.add("shake");
+    element.addEventListener('animationend', () => {
+            element.classList.remove('shake');
+        }, { once: true });
+
+}
+
 // Function to start the automatic slide show
 function startAutoSlide() {
     autoSlideInterval = setInterval(() => {
