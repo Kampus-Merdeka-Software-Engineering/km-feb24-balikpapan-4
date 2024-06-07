@@ -6,6 +6,7 @@
     <title>Vending Machine</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body onload="displayContent(0)">
     <header>
       <nav>
@@ -103,6 +104,7 @@
         <!-- Chart tabel produk -->
         <div class="table-card">
           <h2>PRODUCT TABLE</h2>
+          <p>Sales and Revenue from products</p>
           <table id="productTable"></table>
         </div>
       </section>
@@ -113,7 +115,7 @@
           <h1>DATA REQUEST</h1>
           <p>Data Request Form to Get Desired Data</p>
         </div>
-        <form action="">
+        <form id="data-request">
           <table>
             <tr>
               <td>
@@ -123,6 +125,8 @@
                     type="text"
                     id="first_name"
                     name="first_name"
+                    pattern="[A-Za-z]+"
+                    title="First name should contain only letters"
                     required
                   />
                 </div>
@@ -130,7 +134,14 @@
               <td>
                 <div>
                   <label for="last_name">Last Name</label>
-                  <input type="text" id="last_name" name="last_name" required />
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    pattern="[A-Za-z]+"
+                    title="Last name should contain only letters"
+                    required
+                  />
                 </div>
               </td>
             </tr>
@@ -138,7 +149,7 @@
               <td colspan="2">
                 <div>
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
+                  <input type="email" id="email_id" name="email_id" required />
                 </div>
               </td>
             </tr>
@@ -150,7 +161,12 @@
                     <select type="number" id="ext" name="ext" required>
                       <option value="+62">+62</option>
                     </select>
-                    <input type="number" required />
+                    <input
+                      type="number"
+                      id="phone_number"
+                      name="phone_number"
+                      required
+                    />
                   </div>
                 </div>
               </td>
@@ -159,11 +175,20 @@
               <td colspan="2">
                 <div>
                   <label for="data">Data</label>
-                  <select id="data" name="data" required>
+                  <select id="type_data" name="type_data" required>
                     <option value="" disabled selected></option>
-                    <option value="data1">Data 1</option>
-                    <option value="data2">Data 2</option>
-                    <option value="data3">Data 3</option>
+                    <option value="Sales Trend">Sales Trend</option>
+                    <option value="Transaction Type">Transaction Type</option>
+                    <option value="Top Machine Used">Top Machine Used</option>
+                    <option value="Revenue By Category">
+                      Revenue By Category
+                    </option>
+                    <option value="Revenue By Location">
+                      Revenue By Location
+                    </option>
+                    <option value="Monthly Growth Rate">
+                      Monthly Growth Rate
+                    </option>
                   </select>
                 </div>
               </td>
@@ -172,23 +197,48 @@
               <td colspan="2">
                 <div>
                   <label for="reason">Reason</label>
-                  <select id="reason" name="reason" required>
+                  <select id="type_reason" name="type_reason" required>
                     <option value="" disabled selected></option>
-                    <option value="data1">Reason 1</option>
-                    <option value="data2">Reason 2</option>
-                    <option value="data3">Reason 3</option>
+                    <option value="For Business Purposes">
+                      For Business Purposes
+                    </option>
+                    <option value="For Research Purposes">
+                      For Research Purposes
+                    </option>
+                    <option value="For Personal Use">For Personal Use</option>
+                    <option value="Another Reason">Another Reason</option>
                   </select>
                 </div>
               </td>
             </tr>
             <tr>
               <td>
-                <button type="submit" class="btn" id="form-btn">Submit</button>
+                <button onclick="sendEmail()" class="btn" id="form-btn">
+                  Submit
+                </button>
               </td>
             </tr>
           </table>
         </form>
       </section>
+
+      <!-- popup modal -->
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img
+            src="./Resources/Image/checkmark.png"
+            alt="Success"
+            class="modal-icon"
+          />
+          <h2>Thank you for filling out the form</h2>
+          <a
+            id="modalMessage"
+            href="https://docs.google.com/spreadsheets/d/1sdM9kFYGPQx5SV5olkhqEm2uvAaQPpUUhNV3XrNK1lg/edit?usp=sharing"
+            >Please access data here</a
+          >
+        </div>
+      </div>
 
       <section class="our-team-wrapper" id="our-team">
         <div class="our-team-header shadow">
