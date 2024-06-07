@@ -236,7 +236,7 @@ tabel.onreadystatechange = function () {
             }
         }
         new gridjs.Grid({
-            columns: ["Product", "Revenue", "Sales"],
+            columns: ["Product", "Sales", "Revenue($)"],
             data: value,
             pagination: {
                 limit: 5,
