@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    emailjs.init("W_-5ybZnrcqnM9V5T");
 
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu a');
@@ -20,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Function to send email
-    function sendEmail(event) {
+    // Function to handle form submission
+    function handleFormSubmit(event) {
         event.preventDefault();
 
         const form = document.getElementById('data-request');
@@ -44,23 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
             type_reason: document.getElementById("type_reason").value
         };
 
-        // send email to dev
-        emailjs.send("service_vqmifvf", "template_2wcp8n8", params)
-            .then(function (res) {
-                var modal = document.getElementById("successModal");
-                var dataType = document.getElementById("type_data").value;
-                // Update modal message with link
-                document.getElementById("modalMessage").innerHTML = `Thank you for filling out the form. Please access data [${dataType}] <a href="${params.link_data}" target="_blank">here</a>.`;
-                modal.style.display = "block";
-                document.getElementById("data-request").reset();
-            }, function (error) {
-                alert("Failed to send email. Error: " + error.text);
-            });
-
+        // Simulate email sending and show modal
+        var modal = document.getElementById("successModal");
+        var dataType = document.getElementById("type_data").value;
+        // Update modal message with link
+        document.getElementById("modalMessage").innerHTML = `Thank you for filling out the form. Please access data [${dataType}] <a href="${params.link_data}" target="_blank">here</a>.`;
+        modal.style.display = "block";
+        document.getElementById("data-request").reset();
     }
 
-    // Attach sendEmail function to the form submit event
-    document.getElementById("data-request").addEventListener("submit", sendEmail);
+    // Attach handleFormSubmit function to the form submit event
+    document.getElementById("data-request").addEventListener("submit", handleFormSubmit);
+
     // Modal handling
     var modal = document.getElementById("successModal");
     var span = document.getElementsByClassName("close")[0];
@@ -93,50 +87,50 @@ dashboard.onreadystatechange = function () {
 
         var machineFilter = document.getElementById('chartFilterMachine');
 
-        machine.forEach(function(m, index){
+        machine.forEach(function (m, index) {
             var option = document.createElement('option');
             option.value = index;
             option.textContent = m;
             machineFilter.appendChild(option);
         });
 
-        machineFilter.addEventListener('change', function(){
+        machineFilter.addEventListener('change', function () {
             var selectedIndex = parseInt(this.value);
             var selectedMachine = selectedIndex === -1 ? machine : [machine[selectedIndex]];
             var selectedSales = selectedIndex === -1 ? salesMachine : [salesMachine[selectedIndex]];
-        
+
             updateChart(selectedMachine, selectedSales)
         });
         updateChart(machine, salesMachine)
     }
 };
-    function updateChart(machine, salesMachine){
+function updateChart(machine, salesMachine) {
 
-        if(usedMachine){
-            usedMachine.destroy();
-        }
-        usedMachine = new Chart(topMachineCtx, {
-            type: 'bar',
-            data: {
-                labels: machine,
-                datasets: [{
-                    label: 'Sales',
-                    data: salesMachine,
-                    backgroundColor: '#6d9773',
-                    borderColor: '#388e3c',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
+    if (usedMachine) {
+        usedMachine.destroy();
+    }
+    usedMachine = new Chart(topMachineCtx, {
+        type: 'bar',
+        data: {
+            labels: machine,
+            datasets: [{
+                label: 'Sales',
+                data: salesMachine,
+                backgroundColor: '#6d9773',
+                borderColor: '#388e3c',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
                 }
             }
-        });
-    }
+        }
+    });
+}
 
 
 // Transaction Type //
@@ -265,4 +259,4 @@ tabel.onreadystatechange = function () {
 
 const navHeight = document.querySelector('.menu').offsetHeight;
 
-document.documentElement.style.setProperty('--scroll-padding', navHeight + 50 +"px");
+document.documentElement.style.setProperty('--scroll-padding', navHeight + 50 + "px");

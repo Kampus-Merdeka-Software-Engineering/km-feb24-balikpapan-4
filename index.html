@@ -60,11 +60,8 @@
         </div>
       </div>
       <div class="promotion-image">
-          <img
-            src="https://www.autovending.com.au/wp-content/uploads/2020/01/Merchant-MEDIA-6-Combi-Hi-Res.jpg"
-            alt="Vending Machine"
-            height="300"
-          />
+        <img src="https://www.autovending.com.au/wp-content/uploads/2020/01/Merchant-MEDIA-6-Combi-Hi-Res.jpg"
+          alt="Vending Machine" height="300" />
       </div>
     </section>
 
@@ -97,7 +94,7 @@
             difference in comparison is more than 50%
           </p>
           <canvas id="transactionTypeChart"></canvas>
-          </div>
+        </div>
       </div>
 
       <!-- Chart sales trend -->
@@ -127,27 +124,15 @@
             <td>
               <div>
                 <label for="first_name">First Name</label>
-                  <input
-                    type="text"
-                    id="first_name"
-                    name="first_name"
-                    pattern="[A-Za-z]+"
-                    title="First name should contain only letters"
-                    required
-                  />
+                <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+"
+                  title="First name should contain only letters" required />
               </div>
             </td>
             <td>
               <div>
                 <label for="last_name">Last Name</label>
-                  <input
-                    type="text"
-                    id="last_name"
-                    name="last_name"
-                    pattern="[A-Za-z]+"
-                    title="Last name should contain only letters"
-                    required
-                  />
+                <input type="text" id="last_name" name="last_name" pattern="[A-Za-z]+"
+                  title="Last name should contain only letters" required />
               </div>
             </td>
           </tr>
@@ -167,12 +152,7 @@
                   <select type="number" id="ext" name="ext" required>
                     <option value="+62">+62</option>
                   </select>
-                    <input
-                      type="number"
-                      id="phone_number"
-                      name="phone_number"
-                      required
-                    />
+                  <input type="number" id="phone_number" name="phone_number" required />
                 </div>
               </div>
             </td>
@@ -186,15 +166,15 @@
                   <option value="Sales Trend">Sales Trend</option>
                   <option value="Transaction Type">Transaction Type</option>
                   <option value="Top Machine Used">Top Machine Used</option>
-                    <option value="Revenue By Category">
-                      Revenue By Category
-                    </option>
-                    <option value="Revenue By Location">
-                      Revenue By Location
-                    </option>
-                    <option value="Monthly Growth Rate">
-                      Monthly Growth Rate
-                    </option>
+                  <option value="Revenue By Category">
+                    Revenue By Category
+                  </option>
+                  <option value="Revenue By Location">
+                    Revenue By Location
+                  </option>
+                  <option value="Monthly Growth Rate">
+                    Monthly Growth Rate
+                  </option>
                 </select>
               </div>
             </td>
@@ -205,12 +185,12 @@
                 <label for="reason">Reason</label>
                 <select id="type_reason" name="type_reason" required>
                   <option value="" disabled selected></option>
-                    <option value="For Business Purposes">
-                      For Business Purposes
-                    </option>
-                    <option value="For Research Purposes">
-                      For Research Purposes
-                    </option>
+                  <option value="For Business Purposes">
+                    For Business Purposes
+                  </option>
+                  <option value="For Research Purposes">
+                    For Research Purposes
+                  </option>
                   <option value="For Personal Use">For Personal Use</option>
                   <option value="Another Reason">Another Reason</option>
                 </select>
@@ -219,7 +199,7 @@
           </tr>
           <tr>
             <td>
-              <button onclick="sendEmail()" class="btn" id="form-btn">
+              <button type="submit" class="btn" id="form-btn">
                 Submit
               </button>
             </td>
@@ -232,17 +212,12 @@
     <div id="successModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-          <img
-            src="./Resources/Image/checkmark.png"
-            alt="Success"
-            class="modal-icon"
-          />
+        <img src="./Resources/Image/checkmark.png" alt="Success" class="modal-icon" />
         <h2>Thank you for filling out the form</h2>
-          <a
-            id="modalMessage"
-            href="https://docs.google.com/spreadsheets/d/1sdM9kFYGPQx5SV5olkhqEm2uvAaQPpUUhNV3XrNK1lg/edit?usp=sharing"
-            >Please access data here</a
-          >
+        <a id="modalMessage"
+          href="https://docs.google.com/spreadsheets/d/1sdM9kFYGPQx5SV5olkhqEm2uvAaQPpUUhNV3XrNK1lg/edit?usp=sharing">Please
+          access data here</a>
+        <div id="modalMessage"></div>
       </div>
     </div>
 
@@ -268,12 +243,7 @@
                   <div class="role1"></div>
                   <div class="role1"></div>
                 </div>
-                  <img
-                    src="Resources\team\Audina.png"
-                    alt="Photo"
-                    class="image-front"
-                    id="our-team-image1"
-                  />
+                <img src="Resources\team\Audina.png" alt="Photo" class="image-front" id="our-team-image1" />
               </div>
               <div class="our-team-name-wrapper shadow">
                 <div class="our-team-name" id="our-team-name1"></div>
@@ -293,12 +263,7 @@
                   <div class="role2"></div>
                   <div class="role2"></div>
                 </div>
-                  <img
-                    src="Resources\team\Audina.png"
-                    alt="Photo"
-                    class="image-front"
-                    id="our-team-image2"
-                  />
+                <img src="Resources\team\Audina.png" alt="Photo" class="image-front" id="our-team-image2" />
               </div>
               <div class="our-team-name-wrapper shadow">
                 <div class="our-team-name" id="our-team-name2"></div>
@@ -318,12 +283,7 @@
                   <div class="role3"></div>
                   <div class="role3"></div>
                 </div>
-                  <img
-                    src="Resources\team\Audina.png"
-                    alt="Photo"
-                    class="image-front"
-                    id="our-team-image3"
-                  />
+                <img src="Resources\team\Audina.png" alt="Photo" class="image-front" id="our-team-image3" />
               </div>
               <div class="our-team-name-wrapper shadow">
                 <div class="our-team-name" id="our-team-name3"></div>
@@ -348,14 +308,11 @@
     </footer>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css"
-      rel="stylesheet"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
   <script src="script.js"></script>
   <script src="slider.js"></script>
 </body>
+
 </html>
