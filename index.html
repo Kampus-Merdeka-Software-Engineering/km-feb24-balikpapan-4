@@ -67,7 +67,7 @@
 
     <!-- Dashboard -->
     <section id="data-analytics" class="data-analytics">
-      <h1>DASHBOARD MENTORING</h1>
+      <h1>DASHBOARD MONITORING</h1>
       <h1>VENDING MACHINE</h1>
 
       <div class="container">
@@ -81,7 +81,7 @@
           <canvas id="topMachineChart"></canvas>
           <div>
             <select id="chartFilterMachine">
-              <option value="all">All Machine</option>
+              <option value="-1">All Machine</option>
             </select>
           </div>
         </div>
@@ -94,6 +94,11 @@
             difference in comparison is more than 50%
           </p>
           <canvas id="transactionTypeChart"></canvas>
+          <div>
+            <select id="chartFilterType">
+              <option value="-1">All Transaction</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -102,6 +107,11 @@
         <h2>SALES TREND</h2>
         <p>Monthly revenue and sales charts</p>
         <canvas id="salesTrendChart"></canvas>
+        <div>
+          <select id="chartFilterTrend">
+            <option value="-1">All Transaction</option>
+          </select>
+        </div>
       </div>
 
       <!-- Chart tabel produk -->

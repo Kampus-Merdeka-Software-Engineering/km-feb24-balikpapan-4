@@ -103,38 +103,40 @@ dashboard.onreadystatechange = function () {
         });
         updateChart(machine, salesMachine)
     }
-};
-function updateChart(machine, salesMachine) {
+    function updateChart(machine, salesMachine) {
 
-    if (usedMachine) {
-        usedMachine.destroy();
-    }
-    usedMachine = new Chart(topMachineCtx, {
-        type: 'bar',
-        data: {
-            labels: machine,
-            datasets: [{
-                label: 'Sales',
-                data: salesMachine,
-                backgroundColor: '#6d9773',
-                borderColor: '#388e3c',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: true
+        if (usedMachine) {
+            usedMachine.destroy();
+        }
+        usedMachine = new Chart(topMachineCtx, {
+            type: 'bar',
+            data: {
+                labels: machine,
+                datasets: [{
+                    label: 'Sales',
+                    data: salesMachine,
+                    backgroundColor: '#6d9773',
+                    borderColor: '#388e3c',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
             }
-        }
-    });
-}
+        });
+    };
+    
+};
 
 
 // Transaction Type //
-
+const transactionTypeCtx = document.getElementById('transactionTypeChart');
+var chartType;
 var dashboard = new XMLHttpRequest();
 dashboard.open('GET', 'Resources/filejson/transactionType.json', true);
 dashboard.send();
@@ -144,8 +146,30 @@ dashboard.onreadystatechange = function () {
         var tipe = transType.map(e => e.Type);
         var count = transType.map(e => e.Count);
 
-        const transactionTypeCtx = document.getElementById('transactionTypeChart');
-        new Chart(transactionTypeCtx, {
+        var transFilter = document.getElementById('chartFilterType');
+
+        tipe.forEach(function (m, index) {
+            var option = document.createElement('option');
+            option.value = index;
+            option.textContent = m;
+            transFilter.appendChild(option);
+        });
+
+        transFilter.addEventListener('change', function () {
+            var selectedIndex = parseInt(this.value);
+            var selectedType = selectedIndex === -1 ? tipe : [tipe[selectedIndex]];
+            var selectedCount = selectedIndex === -1 ? count : [count[selectedIndex]];
+
+            updateChartType(selectedType, selectedCount)
+        });
+        updateChartType(tipe, count)
+    }
+    function updateChartType(tipe, count) {
+
+        if (chartType) {
+            chartType.destroy();
+        }
+        chartType = new Chart(transactionTypeCtx, {
             type: 'pie',
             data: {
                 labels: tipe,
@@ -161,10 +185,13 @@ dashboard.onreadystatechange = function () {
                 responsive: true
             }
         });
-    }
+    };
 };
 
+
 // Sales Trend //
+const salesTrendCtx = document.getElementById('salesTrendChart');
+var chartSales;
 var dashboard = new XMLHttpRequest();
 dashboard.open('GET', 'Resources/filejson/salesTrend.json', true);
 dashboard.send();
@@ -175,8 +202,32 @@ dashboard.onreadystatechange = function () {
         var revenue = saleTrend.map(e => e.Revenue);
         var sales = saleTrend.map(e => e.Sales);
 
-        const salesTrendCtx = document.getElementById('salesTrendChart');
-        new Chart(salesTrendCtx, {
+        var trendFilter = document.getElementById('chartFilterTrend');
+
+        month.forEach(function (m, index) {
+            var option = document.createElement('option');
+            option.value = index;
+            option.textContent = m;
+            trendFilter.appendChild(option);
+        });
+
+        trendFilter.addEventListener('change', function () {
+            var selectedIndex = parseInt(this.value);
+            if (selectedIndex === -1) {
+                updateChartTrend(month, sales, revenue);
+            } else {
+                updateChartTrend([month[selectedIndex]], [sales[selectedIndex]], [revenue[selectedIndex]]);
+            }
+        });
+
+        updateChartTrend(month, sales, revenue);
+    }
+    function updateChartTrend(month, sales, revenue) {
+
+        if (chartSales) {
+            chartSales.destroy();
+        }
+        chartSales = new Chart(salesTrendCtx, {
             type: 'bar',
             data: {
                 datasets: [{
@@ -217,7 +268,6 @@ tabel.send();
 tabel.onreadystatechange = function () {
     if (tabel.readyState == 4 && this.status == 200) {
         let tabelData = JSON.parse(this.responseText).map(e => e);
-        console.log(tabelData);
         let value = tabelData.map(e => [e.Product, e.Sales, e.Revenue]);
         function handleData(value) {
             console.log(value);
