@@ -22,7 +22,7 @@ header {
 }
 
 nav {
-    width: calc(100% - 40px);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,7 +218,6 @@ nav {
     height: 60vh;
     width: 40vh;
     margin: 25px;
-
 }
 
 .our-team-photo {
@@ -404,6 +403,10 @@ nav {
         flex-direction: column;
     }
 
+    .our-team-card {
+      margin: 0
+    }
+
     .our-team-button {
         height: 40px;
         width: 40px;
@@ -502,6 +505,7 @@ canvas {
 }
 
 #request-data form table {
+    table-layout: fixed;
     width: 100%;
 }
 
