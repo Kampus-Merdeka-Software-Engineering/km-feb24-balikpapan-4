@@ -6,7 +6,7 @@ html {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-padding-top: var( --scroll-padding, 100px);
+    scroll-padding-top: var(--scroll-padding, 100px);
 }
 
 header {
@@ -405,8 +405,8 @@ nav {
 
     .our-team-card {
         margin: 0
-      }
-  
+    }
+
     .our-team-button {
         height: 40px;
         width: 40px;
@@ -493,7 +493,8 @@ canvas {
 
 .request-text p {
     font-size: 20px;
-    margin-top: 0px
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 #request-data form {
