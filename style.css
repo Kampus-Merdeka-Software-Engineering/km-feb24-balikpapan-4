@@ -352,10 +352,25 @@ nav {
 
     .promotion {
         flex-direction: column;
-        text-align: center;
+        width: auto;
+        padding: 0;
     }
 
-    .promotion-text,
+    .promotion-text{
+        max-width: 100%;
+        width: auto;
+        text-align: justify;
+    }
+
+    .promotion-text h1 {
+        text-align: center;
+    }
+    .promotion-text p {
+        text-align: justify; 
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
+
     .promotion-image {
         max-width: 100%;
     }
@@ -413,6 +428,7 @@ nav {
         margin: 0 10px;
     }
 }
+
 
 section {
     padding: 50px 20px;
@@ -581,29 +597,38 @@ footer p {
 }
 
 .promotion {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background: linear-gradient(135deg, #1a1a1a, #333);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    margin: 20px;
+    margin: 50px;
     box-sizing: border-box;
     color: white;
 }
 
 .promotion-text {
     max-width: 50%;
-    text-align: center;
+    text-align: left;
 }
 
 .promotion-text h1 {
-    font-size: 2.5em;
+    font-size: 1.9em;
+    line-height: 1.2;
+    color: #fdd835;
+    margin-top: 30px;
+}
+
+.promotion-text h3 {
     margin: 0;
     line-height: 1.2;
+    color: #fdd835;
 }
 
 .promotion-text h1 span {
@@ -613,6 +638,7 @@ footer p {
 .promotion-text p {
     font-size: 1.2em;
     margin: 10px 0 20px;
+    text-align: justify;
 }
 
 .promotion-details {
@@ -624,21 +650,45 @@ footer p {
 .detail {
     text-align: center;
     margin: 0 10px;
+    padding: 10px;
+    margin: 15px;
 }
 
-.detail h2 {
-    font-size: 2em;
-    color: #6d9773;
-    margin: 0;
+.detail .btn{
+    background-color: #0D3B2E;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.detail p {
+.detail .btn:hover{
+    background-color: #FEBA01;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    color: black
+}
+
+.detail a {
     margin: 5px 0 0;
     font-size: 1em;
+    color: whitesmoke;
+}
+
+.detail a:hover {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: darkslategray;
 }
 
 .promotion-image {
     max-width: 50%;
+    justify-content: center;
 }
 
 .promotion-image img {
